@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "name": "nuyoah-portrait-character-designer",
+  "displayName": "南鸢人像角色设定师",
+  "version": "0.2.1",
+  "license": "MIT",
+  "source": "https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer",
+  "sourceCommit": "386660a4399ed492c691659f74b57734d18f52b7",
+  "releaseDigest": "d14ef28e45c4b78c2e4e95aeb3412754a6d6fb7f4e60b5bc4a89b82d3a640218",
+  "publishedAt": "2026-09-11T02:11:58Z",
+  "homepage": "https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 10,
+      "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "b5fde44b81590f0f06dd9d1af6a13a79eb322ba219c2578369f5b258fdf07e9b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5371,
+      "sha256": "080201f923e0ab892583cb27fcd3885f688776ebdcb20f7139f02cbb1e7e7f72"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2705,
+      "sha256": "3985c6226a19464d15fd3f17f707753c1df8a791a38e8b66c6fe9d7141099860"
+    },
+    {
+      "path": "agents/interface.yaml",
+      "bytes": 702,
+      "sha256": "ecbb5539938fe40bc6b9d908d3676316b6985e698581ad6b0798a17196fa36fe"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 348,
+      "sha256": "c9abe95fa6d71a90dd078d97fce75bd403c501b6eb71aa5d46af9b3f6af421c7"
+    },
+    {
+      "path": "evals/cases.json",
+      "bytes": 8312,
+      "sha256": "bcd50bfdf075c898ecf8acd36603eaf1b4f48c786e13599b5c40feb2b3c613d7"
+    },
+    {
+      "path": "examples/real-cases.md",
+      "bytes": 10089,
+      "sha256": "78d6ed38b20a47d1131b3bb20c16ff777e7c7da749e2237dfefebf0566fee863"
+    },
+    {
+      "path": "references/acceptance-and-gpt.md",
+      "bytes": 2768,
+      "sha256": "242324e8df12415e9b35337648456dbdb3ff05b6edbbc716e791cb8ded3cc40c"
+    },
+    {
+      "path": "references/check-contract.md",
+      "bytes": 3582,
+      "sha256": "d8e53469b802f0ca73f87defa0b0470aed0c0736da9517d1770fe15af98c26c9"
+    },
+    {
+      "path": "references/decision-rules.md",
+      "bytes": 6094,
+      "sha256": "dae1369e547ff0c9b44bf96eb853b8e168b3f75c9abf1c4b50f7931965beca33"
+    },
+    {
+      "path": "references/lexicon.md",
+      "bytes": 6853,
+      "sha256": "7714260ac2c5b3af635c82a1becd9afd2b3a2812f73432281e044e6b5c9c7a7e"
+    },
+    {
+      "path": "references/makeup-adaptation.md",
+      "bytes": 3682,
+      "sha256": "8bc45d1733fa0f2eca2ddbcc4c80af9948187478964185a14ff685b2a10ad151"
+    },
+    {
+      "path": "references/sources.md",
+      "bytes": 1651,
+      "sha256": "be646857668f1350bb63be9f3cdd4b3e8bef5d9412fcbe8da71d15821739fe75"
+    },
+    {
+      "path": "references/structure-and-compatibility.md",
+      "bytes": 10924,
+      "sha256": "f9a7f4782d8d6ef308876868635cae8d0faa22459f08fa0efd9a290cca83c682"
+    },
+    {
+      "path": "scripts/check_design.py",
+      "bytes": 6712,
+      "sha256": "59a2fadabc949e80b51a6753f300b70cc8597c523afe2211d83645d3ef8d68ff"
+    },
+    {
+      "path": "scripts/export_gpt.py",
+      "bytes": 3062,
+      "sha256": "84bfe410537759548c520566b678f74ad94ebd25d78c052c77ffd78bf4cc9b42"
+    },
+    {
+      "path": "tests/test_design.py",
+      "bytes": 5647,
+      "sha256": "d9fbf92184bbd8ee34c0538a467e2cc2e45651ff805e71ba01726624e11be08c"
+    }
+  ],
+  "installInstructions": "https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer/blob/main/README.md"
+}

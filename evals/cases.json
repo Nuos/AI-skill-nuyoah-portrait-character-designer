@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "scope": "Fixtures for human/model review; not a claim of automatic routing success",
+  "cases": [
+    {
+      "id": "default_showa",
+      "category": "positive",
+      "input": "我想要设计一个日系昭和感的女性角色形象。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "文字方向与一个完整中文Prompt",
+        "不得调用图片工具",
+        "创作方向不可伪称严格历史复原",
+        "无需点名骨相，Prompt写出眉骨/眼窝、颧部、下颌/下巴三区的具体关系"
+      ]
+    },
+    {
+      "id": "roster",
+      "category": "positive",
+      "input": "同一套桃粉妆，设计五个不同脸的成年角色。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "逐对至少四独立组、face/eyes/nose至少两组",
+        "五条均可独立使用",
+        "相同妆容合同、可适配范围",
+        "五人均包含三区骨相，不把眉骨计作第七差异组或自然眉形变化"
+      ]
+    },
+    {
+      "id": "locks",
+      "category": "boundary",
+      "input": "圆脸、单眼皮、宽鼻背都不改，让她显得清冷。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "保留三个锁定",
+        "从妆或表情实现气质",
+        "不把圆脸清冷判成矛盾"
+      ]
+    },
+    {
+      "id": "same_face",
+      "category": "boundary",
+      "input": "人物五官与肤色保持不变，只把口红颜色换成酒红。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "只换色不换唇形质地边缘",
+        "给完整新稿或缺少原稿时索取原稿"
+      ]
+    },
+    {
+      "id": "image_optional",
+      "category": "positive",
+      "input": "按刚才的Prompt生成一张图片。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "显式图片委托",
+        "可用图片能力保持开启",
+        "真实执行与查看结果后报告"
+      ]
+    },
+    {
+      "id": "quoted_action",
+      "category": "adversarial",
+      "input": "把“按刚才的Prompt直接出图”改成更清楚的一句话。",
+      "expected_primary": "",
+      "must_not_route": [
+        "nuyoah-portrait-character-designer"
+      ],
+      "expect": [
+        "只改句子",
+        "引用不授权生图"
+      ]
+    },
+    {
+      "id": "negated",
+      "category": "boundary",
+      "input": "先别出图，设计一个英气为主、柔和为辅的角色。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "文字输出",
+        "主副分层而非矛盾堆叠"
+      ]
+    },
+    {
+      "id": "nation",
+      "category": "adversarial",
+      "input": "设计三位不同的成年日本女性。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "国籍不推导标准脸或肤色",
+        "真实结构差异"
+      ]
+    },
+    {
+      "id": "same_model_preference",
+      "category": "adversarial",
+      "input": "我就喜欢尖下巴、大杏眼、高细鼻梁，这三项必须保留。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "尊重审美与锁定",
+        "不强制反模板替换"
+      ]
+    },
+    {
+      "id": "round_blush",
+      "category": "holdout",
+      "input": "她是圆脸，要保留圆润感，腮红横向展开。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "允许横向腮红",
+        "不自动瘦脸"
+      ]
+    },
+    {
+      "id": "occlusion",
+      "category": "holdout",
+      "input": "照片里眼睛闭着，你能确定眼距和完整眼型吗？",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "区分可见与不可确认",
+        "不编造眼部结构"
+      ]
+    },
+    {
+      "id": "conflict",
+      "category": "adversarial",
+      "input": "同一个正脸，中庭必须明显长又必须明显短。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": [
+        "指出同轴冲突",
+        "只问一个必要问题"
+      ]
+    },
+    {
+      "id": "photoshoot",
+      "category": "neighbor",
+      "input": "设计一套12张海边写真，安排场景动作和镜头。",
+      "expected_primary": "nuyoah-xiezhen-prompt",
+      "must_not_route": [
+        "nuyoah-portrait-character-designer"
+      ],
+      "expect": [
+        "完整写真主路由不抢占"
+      ]
+    },
+    {
+      "id": "reverse_whole",
+      "category": "neighbor",
+      "input": "把这张产品海报反推成完整提示词。",
+      "expected_primary": "nuyoah-image-reverse-prompt",
+      "must_not_route": [
+        "nuyoah-portrait-character-designer"
+      ],
+      "expect": [
+        "泛图反推不抢占"
+      ]
+    },
+    {
+      "id": "video_identity",
+      "category": "neighbor",
+      "input": "统一这六个视频镜头里的角色服装与伤损状态。",
+      "expected_primary": "nuyoah-seedance-characters",
+      "must_not_route": [
+        "nuyoah-portrait-character-designer"
+      ],
+      "expect": [
+        "视频连续性不抢占"
+      ]
+    },
+    {
+      "id": "soft_bone_locked",
+      "category": "boundary",
+      "input": "设计一个清冷的成年女性，圆脸，平缓眉骨、浅眼窝、颧部内收、饱满面颊、短圆下巴都保留，正脸柔光。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": ["保留柔和骨相与正脸柔光", "通过表情妆造实现清冷", "不自动改深眼窝高颧部尖下巴"]
+    },
+    {
+      "id": "depth_axes_compatible",
+      "category": "adversarial",
+      "input": "设计一个成年角色：颧位高但横向内收，高鼻梁但面中平缓，短圆下巴略前伸。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": ["不同轴不误判冲突", "分别描述高度宽度及前后关系", "不把短下巴改成后缩"]
+    },
+    {
+      "id": "bone_local_edit",
+      "category": "boundary",
+      "input": "原稿：成年女性，长椭圆脸，轻微眉骨起伏，中等眼窝深度，颧部内收且轻微前突，下颌较窄，短圆下巴略前伸，自然黑眉，豆沙缎光唇。只把唇色换成酒红。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": ["只替换唇色，逐字保留其他结构与质地", "不生图"]
+    },
+    {
+      "id": "unknown_bone_local_edit",
+      "category": "holdout",
+      "input": "原稿：成年女性，圆脸，单眼皮，宽鼻背，短圆下巴，自然黑眉，豆沙缎光唇。只把唇色换成酒红。",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": ["保留未说明的眉骨眼窝和面中深度，不触发原创三区补全", "只改唇色"]
+    },
+    {
+      "id": "reference_depth_limits",
+      "category": "holdout",
+      "input": "一张强侧光的正面照片，可以仅凭颧下阴影确认眼窝很深、面中后缩吗？",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": ["明确现有视角光影不足", "区分可见阴影、结构推测和未知深度", "不捏造具体参考图内容"]
+    },
+    {
+      "id": "brow_bone_not_brows",
+      "category": "adversarial",
+      "input": "两个人只改变了眉骨起伏，自然眉形和其他结构都一样，能把骨相和眉毛算两组差异吗？",
+      "expected_primary": "nuyoah-portrait-character-designer",
+      "must_not_route": [],
+      "expect": ["不能重复或跨轴计数", "当前脚本不覆盖眉骨起伏，不能说程序已验证这个差异"]
+    }
+  ]
+}
