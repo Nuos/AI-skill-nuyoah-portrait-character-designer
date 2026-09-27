@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "request": {
+    "text": "为六个月婴儿设计适龄、自然无妆的四视图参考方案，使用安全受托姿态，不能为拍背面移除支撑。",
+    "mode": "text",
+    "explicit_image_request": false
+  },
+  "character": {
+    "id": "CH-INFANT",
+    "asset_version": "v0.1.0",
+    "gender": "未指定，不根据服装颜色推断",
+    "age": {
+      "years": 0.5,
+      "appearance": "六个月婴儿外观，保持婴儿面部、头部和四肢比例",
+      "life_stage": "infant"
+    },
+    "era": {
+      "setting": "当代中性摄影参考，不添加特定时代标志",
+      "culture": "日常婴儿服装，不指定文化身份",
+      "accuracy": "unspecified",
+      "source_urls": []
+    },
+    "identity_anchor": "婴儿自然圆润面部，眉骨平缓、眼窝浅，面颊饱满，下巴短圆，鼻尖柔圆，保持同一婴儿的五官与耳形，不添加成人骨骼锐度",
+    "body": {
+      "description": "六个月婴儿的自然体量与短四肢，不套用成人头身比，不拉腿",
+      "height_cm": null,
+      "head_body_ratio": null,
+      "proportion_mode": "natural"
+    },
+    "appearance": {
+      "skin": "自然婴儿肤质，不磨皮和添加成年妆效",
+      "hair": "自然稀疏短发，不额外增加浓密假发",
+      "makeup": "无彩妆",
+      "costume": "不遮住手掌与脚部轮廓的宽松浅米色婴儿连体衣，完整着装",
+      "accessories": "无首饰、无细绳、无手持道具"
+    },
+    "pose": {
+      "posture": "supported_reclining",
+      "description": "在安全宽阔承托垫上自然仰卧，头颈、躯干得到完整支撑，不要求独立站立；通过机位组织观察，不为凑角度采取危险摆姿",
+      "support": "稳定宽阔承托垫，持续支撑头颈与躯干，不移除必要支撑"
+    },
+    "reference": {
+      "mode": "original",
+      "assets": [],
+      "visible_features": [],
+      "unknown_features": [
+        "承托垫遮挡的背部细节不能被当作已观察事实；背面记录保留遮挡，不声称完整可见"
+      ]
+    },
+    "notes": "安全与适龄姿态优先；若严格背面因支撑不可见，标记该项为PARTIAL，不宣称四方向全可见。"
+  },
+  "sheet": {
+    "layout": "portrait_front_side_back",
+    "width_px": 3840,
+    "height_px": 2160,
+    "aspect_ratio": "16:9",
+    "portrait_fraction": 0.28,
+    "side": "left",
+    "background": "浅灰无缝摄影棚，地面可见，无装饰边框",
+    "lighting": "柔和均匀的摄影棚光，肤色可读，暗部保留衣料细节",
+    "same_identity": true,
+    "same_costume": true,
+    "same_pose": true,
+    "views": [
+      {
+        "id": "portrait",
+        "framing": "head_to_clavicle",
+        "angle_degrees": 0,
+        "character_id": "CH-INFANT",
+        "asset_version": "v0.1.0",
+        "scale": null,
+        "baseline": null
+      },
+      {
+        "id": "front",
+        "framing": "full_body",
+        "angle_degrees": 0,
+        "character_id": "CH-INFANT",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "side",
+        "framing": "full_body",
+        "angle_degrees": 90,
+        "character_id": "CH-INFANT",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "back",
+        "framing": "full_body",
+        "angle_degrees": 180,
+        "character_id": "CH-INFANT",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      }
+    ]
+  },
+  "locks": {
+    "character.identity_anchor": "婴儿自然圆润面部，眉骨平缓、眼窝浅，面颊饱满，下巴短圆，鼻尖柔圆，保持同一婴儿的五官与耳形，不添加成人骨骼锐度"
+  },
+  "safety": {
+    "age_appropriate": true,
+    "non_sexual": true
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "schema_version": 2,
+  "scope": "Manual semantic/image review fixtures, not automatically executed model evaluations",
+  "execution_status": "UNVERIFIED",
+  "cases": [
+    {
+      "id": "default_layout",
+      "input": "设计一个人物四视图定妆照。",
+      "expect": [
+        "输出完整中文提示词，不调用图片工具",
+        "特写、正面、侧面、背面四列，同一角色",
+        "未指定的性别、精确年龄、身高和头身比不强填"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "child",
+      "input": "为8岁女孩设计自然写实四视图。",
+      "expect": [
+        "保持儿童体型与年龄",
+        "不使用成人九头身和成熟性感妆造"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "infant",
+      "input": "为6个月婴儿制作四视图。",
+      "expect": [
+        "安全受托姿态，不强行站立",
+        "必要支撑遮挡背部时如实记录PARTIAL，不移除支撑"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "elder",
+      "input": "80岁的老年男性，保留皮肤皱纹、圆脸与体型。",
+      "expect": [
+        "保留年龄痕迹与软组织",
+        "不年轻化，不强制瘦脸"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "nonbinary",
+      "input": "未来世界的非二元角色，短发，自然体型。",
+      "expect": [
+        "保留用户性别设定",
+        "不由性别自动决定妆容或肩腰比例"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "unspecified_gender",
+      "input": "不指定性别，制作一个中年角色的四视图。",
+      "expect": [
+        "保持性别未指定",
+        "不把不指定解释为强制中性外貌"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "historical_inspired",
+      "input": "1930年代背景的女医生，影视化造型。",
+      "expect": [
+        "时代服务服装材质和细节",
+        "没有考据不声称严格历史复原"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "historical_verified",
+      "input": "严格复原有史料来源的清代服饰。",
+      "expect": [
+        "先检索并核对可靠来源",
+        "来源不够时标注未核实，不编造考据"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "mythology",
+      "input": "西西弗斯，科林斯国王，190厘米，九头身，无披风。",
+      "expect": [
+        "保留用户指定身高比例且协调骨架",
+        "神话影视化设计，不冒称史实人物复原",
+        "不把九头身变成其它人物默认"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "modern",
+      "input": "当代女性工程师，无妆，宽松工装。",
+      "expect": [
+        "无妆是完整方案",
+        "不因性别改成默认美妆写真"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "reference_identity",
+      "input": "只使用我提供的参考人物，生成四视图提示词。",
+      "expect": [
+        "重复唯一身份基准",
+        "未展示的背部信息作保守补全，不假装观察到"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "style_only",
+      "input": "只借参考图的服装风格，角色是全新设计。",
+      "expect": [
+        "不复制参考人物的脸",
+        "身份参考与服装风格参考区分"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "left_side",
+      "input": "第三列展示角色自己的左侧，禁止镜像。",
+      "expect": [
+        "未镜像画面中左侧可见、鼻尖朝画面左",
+        "单侧配饰遵循人物解剖左右"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "right_side",
+      "input": "改为展示角色右侧，其它不变。",
+      "expect": [
+        "只改变侧面选择，不换脸换衣",
+        "未镜像画面中鼻尖朝画面右"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "not_four_bodies",
+      "input": "要特写、正面全身、侧面全身、背面全身。",
+      "expect": [
+        "不能变成正左背右四张全身",
+        "不能额外增加缩略图"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "same_scale",
+      "input": "人物看起来很矮，修复全身比例。",
+      "expect": [
+        "先检查裁切、头身关系与三全身尺度",
+        "不单独缩头、拉小腿、厚底鞋或低机位伪造身高"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "outfit_only",
+      "input": "保持同一个人，只把落魄衣服改成国王装束。",
+      "expect": [
+        "锁定脸、年龄、肤色、身形",
+        "只改变允许的服装字段并同步版本"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "local_makeup",
+      "input": "只改唇色，其余保持。",
+      "expect": [
+        "保留唇形、质地、骨相与四视图布局",
+        "交付完整新稿"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "seated",
+      "input": "角色使用轮椅，保持坐姿四视图。",
+      "expect": [
+        "保留轮椅与必要支撑",
+        "使用坐姿接触基线，不强制站立或宣称腿长可测"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "occluded",
+      "input": "只有强侧光正面照，需要背面。",
+      "expect": [
+        "区分可见、推测和不可确认",
+        "不由阴影确认骨骼深度，不新增明显标记"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "explicit_image",
+      "input": "按已确认的提示词直接生成图片。",
+      "expect": [
+        "只在可用图片工具中实际执行",
+        "检查真实图像，不把提示词当作结果"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "quoted_no_image",
+      "input": "把“直接生成图片”这句话改写得清楚，不要生图。",
+      "expect": [
+        "只改文字",
+        "引号内动作不构成图片授权"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "resolution",
+      "input": "要求原生4K定妆照。",
+      "expect": [
+        "核对工具实际支持的输出尺寸",
+        "不把放大结果伪称原生4K，不编造接口参数"
+      ],
+      "execution_status": "UNVERIFIED"
+    },
+    {
+      "id": "distinct_people",
+      "input": "分别设计三名不同性别和年龄的人物。",
+      "expect": [
+        "每人独立四视图与完整提示词",
+        "同一人的四个视图不执行不同脸差异规则"
+      ],
+      "execution_status": "UNVERIFIED"
+    }
+  ]
+}

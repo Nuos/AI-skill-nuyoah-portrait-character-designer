@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-25T19:55:30.356696-07:00",
+  "provider": "fal",
+  "endpoint": "fal-ai/nano-banana-pro",
+  "settings": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "num_images": 1,
+    "output_format": "png"
+  },
+  "selection": "One targeted user preset plus stratified random child, nonbinary adult and older female cases; no output-based cherry-picking.",
+  "requested_cases": [
+    "MYTH-188",
+    "RND-005",
+    "RND-014",
+    "RND-015"
+  ],
+  "attempts": [
+    {
+      "case": "MYTH-188",
+      "status": "BLOCKED",
+      "http_status": 403,
+      "upstream_reason": "balance_exhausted",
+      "request_id": null,
+      "prompt_sha256": "59f5b836fd35d4e40ed451e505b2b7c91c10adfb7c79a607b04eaec58098e712"
+    }
+  ],
+  "other_cases_status": "NOT_RUN_AFTER_ACCOUNT_BLOCK",
+  "automatic_retries": 0,
+  "generated_image_count": 0,
+  "image_quality_review": "UNVERIFIED",
+  "note": "No image exists to review. No account switching or repeated billable submission was performed. Top up the connected provider account before retrying this route."
+}

@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-09-26T17:39:36.738642-07:00",
+  "repository": "Nuos/AI-skill-nuyoah-portrait-character-designer",
+  "target_branch": "main",
+  "verified_remote_commit": "99b9a2c90e5b09507c6a61b5c27b9e2740ddb63d",
+  "verified_base_tree": "d17aa3d2d2b9c7e993494b113729fab28e0639bc",
+  "baseline_file_count": 19,
+  "source_version": "0.3.1",
+  "source_file_count": 46,
+  "source_zip_sha256": "f8a3ec805f4bb5ac04f114ada1381553fcb9a9e5ca487d4c44a9b996a2d22a57",
+  "unit_tests": {
+    "status": "PASS",
+    "count": 85
+  },
+  "source_manifest": {
+    "status": "PASS",
+    "files_excluding_manifest": 45,
+    "release_digest": "3b64f1cab96163b4f900cdd2d7f74c0ec0ec1fb172bbecdc384ebf6ea1e8e56c"
+  },
+  "randomized": {
+    "status": "PASS",
+    "seed": 20260925,
+    "plans": 24,
+    "prompts": 120,
+    "rejected_mutations": 192,
+    "historical_plan_prompt_byte_comparison": {
+      "checked": 144,
+      "matched": 144
+    }
+  },
+  "gpt_export": "PASS (offline export; not online app publication)",
+  "image_generation": {
+    "new_attempts_this_turn": 0,
+    "historical_result": "BLOCKED: fal balance_exhausted",
+    "image_review": "UNVERIFIED"
+  },
+  "remote_write": {
+    "status": "BLOCKED",
+    "action": "GitHub.create_tree",
+    "platform_message": "因 OpenAI 无法确定请求的安全状态，已拦截此工具调用。"
+  },
+  "remote_commit_created": false,
+  "pull_request_created": false,
+  "remote_merged": false,
+  "scope": "Offline patch preparation and verification only; no bypass or alternative remote write attempted after block."
+}

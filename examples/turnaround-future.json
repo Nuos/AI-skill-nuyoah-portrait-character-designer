@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "request": {
+    "text": "设计一位34岁非二元性别的未来研究员，四视图定妆，真实人体与实用服装，不改成机器人。",
+    "mode": "text",
+    "explicit_image_request": false
+  },
+  "character": {
+    "id": "CH-FUTURE",
+    "asset_version": "v0.1.0",
+    "gender": "非二元性别；服装表现中性，但不套用固定骨相",
+    "age": {
+      "years": 34,
+      "appearance": "34岁自然成年外观",
+      "life_stage": "adult"
+    },
+    "era": {
+      "setting": "架空未来近地轨道研究设施",
+      "culture": "研究员职业，实用科技服装，不作现实史实复原",
+      "accuracy": "inspired",
+      "source_urls": []
+    },
+    "identity_anchor": "略长的方圆脸，眉骨轻微起伏、眼窝较浅，颧宽与下颌宽相近，下巴平缓，平直细长眼，较宽的鼻背，唇形宽度适中，保留细微嘴角不对称",
+    "body": {
+      "description": "中等身高观感与自然体量，肩腰差适中，保持真实人体和协调四肢",
+      "height_cm": null,
+      "head_body_ratio": null,
+      "proportion_mode": "natural"
+    },
+    "appearance": {
+      "skin": "中深肤色，真实毛孔和轻微自然反光",
+      "hair": "紧密自然卷短发，四方向保持同一发际线",
+      "makeup": "无显著彩妆",
+      "costume": "灰白立领研究工作服，左胸小型无文字矩形口袋，直筒裤和平底工作鞋，衣物缝线与扣合一致",
+      "accessories": "左腕一只简洁无屏幕腕带，不镜像到右手"
+    },
+    "pose": {
+      "posture": "standing",
+      "description": "自然直立，双脚稳定承重，双臂略离躯干，双手放松，不交叉肢体",
+      "support": "无"
+    },
+    "reference": {
+      "mode": "original",
+      "assets": [],
+      "visible_features": [],
+      "unknown_features": []
+    }
+  },
+  "sheet": {
+    "layout": "portrait_front_side_back",
+    "width_px": 3840,
+    "height_px": 2160,
+    "aspect_ratio": "16:9",
+    "portrait_fraction": 0.28,
+    "side": "left",
+    "background": "浅灰无缝摄影棚，地面可见，无装饰边框",
+    "lighting": "柔和均匀的摄影棚光，肤色可读，暗部保留衣料细节",
+    "same_identity": true,
+    "same_costume": true,
+    "same_pose": true,
+    "views": [
+      {
+        "id": "portrait",
+        "framing": "head_to_clavicle",
+        "angle_degrees": 0,
+        "character_id": "CH-FUTURE",
+        "asset_version": "v0.1.0",
+        "scale": null,
+        "baseline": null
+      },
+      {
+        "id": "front",
+        "framing": "full_body",
+        "angle_degrees": 0,
+        "character_id": "CH-FUTURE",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "side",
+        "framing": "full_body",
+        "angle_degrees": 90,
+        "character_id": "CH-FUTURE",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "back",
+        "framing": "full_body",
+        "angle_degrees": 180,
+        "character_id": "CH-FUTURE",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      }
+    ]
+  },
+  "locks": {
+    "character.identity_anchor": "略长的方圆脸，眉骨轻微起伏、眼窝较浅，颧宽与下颌宽相近，下巴平缓，平直细长眼，较宽的鼻背，唇形宽度适中，保留细微嘴角不对称"
+  },
+  "safety": {
+    "age_appropriate": true,
+    "non_sexual": true
+  }
+}

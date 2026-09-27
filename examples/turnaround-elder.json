@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "request": {
+    "text": "设计82岁女性医师的四视图定妆，1930年代启发的架空影视造型，保留自然衰老，不做严格历史复原宣称。",
+    "mode": "text",
+    "explicit_image_request": false
+  },
+  "character": {
+    "id": "CH-ELDER",
+    "asset_version": "v0.1.0",
+    "gender": "女性",
+    "age": {
+      "years": 82,
+      "appearance": "82岁外观，自然皱纹和面颊软组织变化，神态清醒平静",
+      "life_stage": "older_adult"
+    },
+    "era": {
+      "setting": "1930年代启发的架空影视故事",
+      "culture": "地方诊所医师的朴素职业造型；未经史料核对，不称精确复原",
+      "accuracy": "inspired",
+      "source_urls": []
+    },
+    "identity_anchor": "略窄鹅蛋脸，眉骨平缓、眼窝较深，颧部过渡清楚但不夸张消瘦，圆钝下巴，略下垂的自然眼尾，平直鼻背与中等鼻翼，薄唇，耳廓自然",
+    "body": {
+      "description": "自然偏瘦体型，肩线稍缓，姿态由角色设定决定，不强制驼背或虚弱",
+      "height_cm": null,
+      "head_body_ratio": null,
+      "proportion_mode": "natural"
+    },
+    "appearance": {
+      "skin": "保留额纹、眼角细纹与自然肤色差异，不嫩化",
+      "hair": "灰白相间的低盘发，发际线和盘发位置四视图一致",
+      "makeup": "无明显彩妆，不掩盖年龄纹理",
+      "costume": "米灰棉质长袖工作罩衫，深色直筒长裤，低跟闭口鞋；前后缝线结构一致",
+      "accessories": "无首饰；眼镜不用于遮挡五官，无手持道具"
+    },
+    "pose": {
+      "posture": "standing",
+      "description": "自然直立，双脚稳定承重，双臂略离躯干，双手放松，不交叉肢体",
+      "support": "无"
+    },
+    "reference": {
+      "mode": "original",
+      "assets": [],
+      "visible_features": [],
+      "unknown_features": []
+    }
+  },
+  "sheet": {
+    "layout": "portrait_front_side_back",
+    "width_px": 3840,
+    "height_px": 2160,
+    "aspect_ratio": "16:9",
+    "portrait_fraction": 0.28,
+    "side": "left",
+    "background": "浅灰无缝摄影棚，地面可见，无装饰边框",
+    "lighting": "柔和均匀的摄影棚光，肤色可读，暗部保留衣料细节",
+    "same_identity": true,
+    "same_costume": true,
+    "same_pose": true,
+    "views": [
+      {
+        "id": "portrait",
+        "framing": "head_to_clavicle",
+        "angle_degrees": 0,
+        "character_id": "CH-ELDER",
+        "asset_version": "v0.1.0",
+        "scale": null,
+        "baseline": null
+      },
+      {
+        "id": "front",
+        "framing": "full_body",
+        "angle_degrees": 0,
+        "character_id": "CH-ELDER",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "side",
+        "framing": "full_body",
+        "angle_degrees": 90,
+        "character_id": "CH-ELDER",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "back",
+        "framing": "full_body",
+        "angle_degrees": 180,
+        "character_id": "CH-ELDER",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      }
+    ]
+  },
+  "locks": {
+    "character.identity_anchor": "略窄鹅蛋脸，眉骨平缓、眼窝较深，颧部过渡清楚但不夸张消瘦，圆钝下巴，略下垂的自然眼尾，平直鼻背与中等鼻翼，薄唇，耳廓自然"
+  },
+  "safety": {
+    "age_appropriate": true,
+    "non_sexual": true
+  }
+}

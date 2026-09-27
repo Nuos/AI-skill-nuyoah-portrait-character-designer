@@ -1,6 +1,6 @@
 interface:
-  display_name: "南鸢·人像角色设定师"
-  short_description: "把人物气质转成不同的人脸结构与妆容，默认交付可复制的中文提示词"
-  default_prompt: "使用 $nuyoah-portrait-character-designer 设计一个清冷但保留圆脸和圆钝下巴的成年人物。"
+  display_name: "通用四视图人物定妆照设计师"
+  short_description: "任意性别、年龄、时代的写实人物定妆；特写与正侧背全身同一身份"
+  default_prompt: "使用 $nuyoah-portrait-character-designer，按我的人物或参考图生成完整四视图定妆照提示词：人像特写、正面全身、标准侧面全身、背面全身。保留年龄、性别、时代与身体设定，不擅自改变身份。"
 policy:
   allow_implicit_invocation: true

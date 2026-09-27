@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "request": {
+    "text": "为8岁女孩设计当代儿童四视图定妆照，自然无妆，适龄比例，不套用成人模特身材。",
+    "mode": "text",
+    "explicit_image_request": false
+  },
+  "character": {
+    "id": "CH-CHILD",
+    "asset_version": "v0.1.0",
+    "gender": "女性",
+    "age": {
+      "years": 8,
+      "appearance": "8岁儿童外观，面部与身体保持适龄比例",
+      "life_stage": "child"
+    },
+    "era": {
+      "setting": "当代日常现实",
+      "culture": "儿童日常活动服装，不预设民族身份",
+      "accuracy": "unspecified",
+      "source_urls": []
+    },
+    "identity_anchor": "圆脸，平缓眉骨与浅眼窝，饱满面颊自然过渡至短圆下巴，眼距适中、眼裂偏短，小巧圆鼻尖，上下唇比例自然，不采用成年演员面部",
+    "body": {
+      "description": "普通儿童体型，肩、躯干、手脚及四肢长度协调；不成人化，不刻意拉长腿部",
+      "height_cm": null,
+      "head_body_ratio": null,
+      "proportion_mode": "natural"
+    },
+    "appearance": {
+      "skin": "自然儿童肤质，不磨皮、不添加成熟妆效",
+      "hair": "齐耳自然短发，两侧耳朵尽量可见",
+      "makeup": "无彩妆，保持自然唇色和眉毛",
+      "costume": "浅蓝长袖棉上衣，深灰宽松长裤，白色平底运动鞋，无品牌标识",
+      "accessories": "无首饰、无手持道具"
+    },
+    "pose": {
+      "posture": "standing",
+      "description": "自然直立，双脚稳定承重，双臂略离躯干，双手放松，不交叉肢体",
+      "support": "无"
+    },
+    "reference": {
+      "mode": "original",
+      "assets": [],
+      "visible_features": [],
+      "unknown_features": []
+    }
+  },
+  "sheet": {
+    "layout": "portrait_front_side_back",
+    "width_px": 3840,
+    "height_px": 2160,
+    "aspect_ratio": "16:9",
+    "portrait_fraction": 0.28,
+    "side": "left",
+    "background": "浅灰无缝摄影棚，地面可见，无装饰边框",
+    "lighting": "柔和均匀的摄影棚光，肤色可读，暗部保留衣料细节",
+    "same_identity": true,
+    "same_costume": true,
+    "same_pose": true,
+    "views": [
+      {
+        "id": "portrait",
+        "framing": "head_to_clavicle",
+        "angle_degrees": 0,
+        "character_id": "CH-CHILD",
+        "asset_version": "v0.1.0",
+        "scale": null,
+        "baseline": null
+      },
+      {
+        "id": "front",
+        "framing": "full_body",
+        "angle_degrees": 0,
+        "character_id": "CH-CHILD",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "side",
+        "framing": "full_body",
+        "angle_degrees": 90,
+        "character_id": "CH-CHILD",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "back",
+        "framing": "full_body",
+        "angle_degrees": 180,
+        "character_id": "CH-CHILD",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      }
+    ]
+  },
+  "locks": {
+    "character.identity_anchor": "圆脸，平缓眉骨与浅眼窝，饱满面颊自然过渡至短圆下巴，眼距适中、眼裂偏短，小巧圆鼻尖，上下唇比例自然，不采用成年演员面部"
+  },
+  "safety": {
+    "age_appropriate": true,
+    "non_sexual": true
+  }
+}

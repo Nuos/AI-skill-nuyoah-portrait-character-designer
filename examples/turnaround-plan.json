@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "request": {
+    "text": "为70岁的当代男性退休木匠设计四视图定妆照，保留自然体型与皱纹，浅灰摄影棚，4K目标。只给提示词。",
+    "mode": "text",
+    "explicit_image_request": false
+  },
+  "character": {
+    "id": "CH-CARPENTER",
+    "asset_version": "v0.1.0",
+    "gender": "男性",
+    "age": {
+      "years": 70,
+      "appearance": "70岁外观，保留眼角与额头细纹，不进行年轻化",
+      "life_stage": "older_adult"
+    },
+    "era": {
+      "setting": "当代日常现实",
+      "culture": "退休木匠的朴素职业生活，不从职业推定族裔",
+      "accuracy": "unspecified",
+      "source_urls": []
+    },
+    "identity_anchor": "眉骨平缓、眼窝中等深度，面颊略饱满，颧部宽度略大于下颌，圆钝下巴，眼裂稍长、自然眉较浓，宽鼻翼与平直鼻背，上唇略薄于下唇，左眉尾轻微稀疏",
+    "body": {
+      "description": "自然中等体型，肩部略宽，腹部有适度软组织，躯干与四肢协调，不模特化",
+      "height_cm": null,
+      "head_body_ratio": null,
+      "proportion_mode": "natural"
+    },
+    "appearance": {
+      "skin": "自然中等肤色，保留毛孔和年龄纹理，不提白",
+      "hair": "灰黑相间短发，保持统一发际线与自然毛流",
+      "makeup": "无显著彩妆，仅控制局部过强反光，保留真实肤质",
+      "costume": "无品牌米灰棉衬衫，单胸袋，深灰直筒长裤，深棕平底工作鞋；各视图沿用相同衣缝和扣合",
+      "accessories": "无首饰、无帽子、无手持道具"
+    },
+    "pose": {
+      "posture": "standing",
+      "description": "自然直立，双脚稳定承重，双臂略离躯干，双手放松，不交叉肢体",
+      "support": "无"
+    },
+    "reference": {
+      "mode": "original",
+      "assets": [],
+      "visible_features": [],
+      "unknown_features": []
+    }
+  },
+  "sheet": {
+    "layout": "portrait_front_side_back",
+    "width_px": 3840,
+    "height_px": 2160,
+    "aspect_ratio": "16:9",
+    "portrait_fraction": 0.28,
+    "side": "left",
+    "background": "浅灰无缝摄影棚，地面可见，无装饰边框",
+    "lighting": "柔和均匀的摄影棚光，肤色可读，暗部保留衣料细节",
+    "same_identity": true,
+    "same_costume": true,
+    "same_pose": true,
+    "views": [
+      {
+        "id": "portrait",
+        "framing": "head_to_clavicle",
+        "angle_degrees": 0,
+        "character_id": "CH-CARPENTER",
+        "asset_version": "v0.1.0",
+        "scale": null,
+        "baseline": null
+      },
+      {
+        "id": "front",
+        "framing": "full_body",
+        "angle_degrees": 0,
+        "character_id": "CH-CARPENTER",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "side",
+        "framing": "full_body",
+        "angle_degrees": 90,
+        "character_id": "CH-CARPENTER",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "back",
+        "framing": "full_body",
+        "angle_degrees": 180,
+        "character_id": "CH-CARPENTER",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      }
+    ]
+  },
+  "locks": {
+    "character.identity_anchor": "眉骨平缓、眼窝中等深度，面颊略饱满，颧部宽度略大于下颌，圆钝下巴，眼裂稍长、自然眉较浓，宽鼻翼与平直鼻背，上唇略薄于下唇，左眉尾轻微稀疏"
+  },
+  "safety": {
+    "age_appropriate": true,
+    "non_sexual": true
+  }
+}
