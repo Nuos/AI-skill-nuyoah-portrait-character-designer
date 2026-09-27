@@ -1,0 +1,112 @@
+$ /opt/pyvenv/bin/python3 -m unittest discover -s tests -v
+test_all_pairs_not_only_first (test_design.DesignTests.test_all_pairs_not_only_first) ... ok
+test_distinct_all_pairs_and_uniform_makeup (test_design.DesignTests.test_distinct_all_pairs_and_uniform_makeup) ... ok
+test_four_groups_require_two_core_groups (test_design.DesignTests.test_four_groups_require_two_core_groups) ... ok
+test_generation_is_optional_and_explicit (test_design.DesignTests.test_generation_is_optional_and_explicit) ... ok
+test_lock_and_identity_changes_fail (test_design.DesignTests.test_lock_and_identity_changes_fail) ... ok
+test_makeup_and_input_contracts (test_design.DesignTests.test_makeup_and_input_contracts) ... ok
+test_many_eye_changes_are_one_group (test_design.DesignTests.test_many_eye_changes_are_one_group) ... ok
+test_only_decorations_cannot_make_different_faces (test_design.DesignTests.test_only_decorations_cannot_make_different_faces) ... ok
+test_partial_reference_and_related_roster (test_design.DesignTests.test_partial_reference_and_related_roster) ... ok
+test_source_derived_export_and_enabled_images (test_design.DesignTests.test_source_derived_export_and_enabled_images) ... ok
+test_unknown_missing_array_and_duplicate_axes (test_design.DesignTests.test_unknown_missing_array_and_duplicate_axes) ... ok
+test_angles_are_strict (test_turnaround.TurnaroundTests.test_angles_are_strict) ... ok
+test_authorization_must_be_boolean (test_turnaround.TurnaroundTests.test_authorization_must_be_boolean) ... ok
+test_bad_roots_fail_without_exceptions (test_turnaround.TurnaroundTests.test_bad_roots_fail_without_exceptions) ... ok
+test_bool_is_not_schema_or_number (test_turnaround.TurnaroundTests.test_bool_is_not_schema_or_number) ... ok
+test_canvas_ratio_matches_dimensions (test_turnaround.TurnaroundTests.test_canvas_ratio_matches_dimensions) ... ok
+test_cli_bad_input_clean_exit (test_turnaround.TurnaroundTests.test_cli_bad_input_clean_exit) ... ok
+test_cli_from_other_working_directory (test_turnaround.TurnaroundTests.test_cli_from_other_working_directory) ... ok
+test_compiler_rejects_invalid_plans_and_views (test_turnaround.TurnaroundTests.test_compiler_rejects_invalid_plans_and_views) ... ok
+test_compiler_repeats_full_anchor_in_each_view (test_turnaround.TurnaroundTests.test_compiler_repeats_full_anchor_in_each_view) ... ok
+test_duplicate_and_nonfinite_json_rejected (test_turnaround.TurnaroundTests.test_duplicate_and_nonfinite_json_rejected) ... ok
+test_edit_allows_costume_only (test_turnaround.TurnaroundTests.test_edit_allows_costume_only) ... ok
+test_edit_rejects_unpermitted_face_and_body_changes (test_turnaround.TurnaroundTests.test_edit_rejects_unpermitted_face_and_body_changes) ... ok
+test_edit_version_and_identity (test_turnaround.TurnaroundTests.test_edit_version_and_identity) ... ok
+test_examples_pass_with_images_unverified (test_turnaround.TurnaroundTests.test_examples_pass_with_images_unverified) ... ok
+test_explicit_ratio_must_exist (test_turnaround.TurnaroundTests.test_explicit_ratio_must_exist) ... ok
+test_export_has_four_view_and_age_rules (test_turnaround.TurnaroundTests.test_export_has_four_view_and_age_rules) ... ok
+test_export_refuses_symlink_target (test_turnaround.TurnaroundTests.test_export_refuses_symlink_target) ... ok
+test_four_views_exact_number (test_turnaround.TurnaroundTests.test_four_views_exact_number) ... ok
+test_gender_age_era_are_not_admission_gates (test_turnaround.TurnaroundTests.test_gender_age_era_are_not_admission_gates) ... ok
+test_historical_verified_requires_sources (test_turnaround.TurnaroundTests.test_historical_verified_requires_sources) ... ok
+test_image_requires_explicit_authorization (test_turnaround.TurnaroundTests.test_image_requires_explicit_authorization) ... ok
+test_infant_requires_support (test_turnaround.TurnaroundTests.test_infant_requires_support) ... ok
+test_invalid_finite_and_negative_numbers (test_turnaround.TurnaroundTests.test_invalid_finite_and_negative_numbers) ... ok
+test_large_integer_does_not_crash (test_turnaround.TurnaroundTests.test_large_integer_does_not_crash) ... ok
+test_left_right_profile_wording (test_turnaround.TurnaroundTests.test_left_right_profile_wording) ... ok
+test_locks_are_typed_existing_paths (test_turnaround.TurnaroundTests.test_locks_are_typed_existing_paths) ... ok
+test_malformed_edit_baseline (test_turnaround.TurnaroundTests.test_malformed_edit_baseline) ... ok
+test_manifest_deterministic_and_sensitive_to_changes (test_turnaround.TurnaroundTests.test_manifest_deterministic_and_sensitive_to_changes) ... ok
+test_manifest_refuses_source_symlinks (test_turnaround.TurnaroundTests.test_manifest_refuses_source_symlinks) ... ok
+test_no_global_numeric_ratio (test_turnaround.TurnaroundTests.test_no_global_numeric_ratio) ... ok
+test_optional_age_height_and_ratio_not_invented (test_turnaround.TurnaroundTests.test_optional_age_height_and_ratio_not_invented) ... ok
+test_portrait_fraction_open_interval (test_turnaround.TurnaroundTests.test_portrait_fraction_open_interval) ... ok
+test_portrait_not_subject_to_full_body_scale (test_turnaround.TurnaroundTests.test_portrait_not_subject_to_full_body_scale) ... ok
+test_reference_proportions_require_identity_reference (test_turnaround.TurnaroundTests.test_reference_proportions_require_identity_reference) ... ok
+test_reference_requires_real_input_declarations (test_turnaround.TurnaroundTests.test_reference_requires_real_input_declarations) ... ok
+test_required_nested_fields (test_turnaround.TurnaroundTests.test_required_nested_fields) ... ok
+test_safety_declarations_not_optional (test_turnaround.TurnaroundTests.test_safety_declarations_not_optional) ... ok
+test_same_costume_and_pose_required (test_turnaround.TurnaroundTests.test_same_costume_and_pose_required) ... ok
+test_same_identity_and_version_every_view (test_turnaround.TurnaroundTests.test_same_identity_and_version_every_view) ... ok
+test_same_scale_and_baseline (test_turnaround.TurnaroundTests.test_same_scale_and_baseline) ... ok
+test_supported_pose_cannot_have_no_support (test_turnaround.TurnaroundTests.test_supported_pose_cannot_have_no_support) ... ok
+test_supported_pose_does_not_require_visible_occluded_back (test_turnaround.TurnaroundTests.test_supported_pose_does_not_require_visible_occluded_back) ... ok
+test_unknown_fields_fail (test_turnaround.TurnaroundTests.test_unknown_fields_fail) ... ok
+test_v2_dispatch_works_with_original_import_style (test_turnaround.TurnaroundTests.test_v2_dispatch_works_with_original_import_style) ... ok
+test_view_order_and_framing (test_turnaround.TurnaroundTests.test_view_order_and_framing) ... ok
+test_wrong_nested_types_fail (test_turnaround.TurnaroundTests.test_wrong_nested_types_fail) ... ok
+test_adult_specific_terms_rejected_for_child (test_vocabulary.VocabularyTests.test_adult_specific_terms_rejected_for_child) ... ok
+test_catalog_is_valid_unique_and_nonempty (test_vocabulary.VocabularyTests.test_catalog_is_valid_unique_and_nonempty) ... ok
+test_character_terms_never_default (test_vocabulary.VocabularyTests.test_character_terms_never_default) ... ok
+test_cli_negative_only (test_vocabulary.VocabularyTests.test_cli_negative_only) ... ok
+test_duplicate_or_wrong_marks_fail (test_vocabulary.VocabularyTests.test_duplicate_or_wrong_marks_fail) ... ok
+test_excluded_term_not_rendered (test_vocabulary.VocabularyTests.test_excluded_term_not_rendered) ... ok
+test_export_contains_machine_vocabulary_and_version (test_vocabulary.VocabularyTests.test_export_contains_machine_vocabulary_and_version) ... ok
+test_expression_lock (test_vocabulary.VocabularyTests.test_expression_lock) ... ok
+test_include_exclude_conflict (test_vocabulary.VocabularyTests.test_include_exclude_conflict) ... ok
+test_infant_never_forced_into_standing_terms (test_vocabulary.VocabularyTests.test_infant_never_forced_into_standing_terms) ... ok
+test_mark_side_drift_breaks_lock (test_vocabulary.VocabularyTests.test_mark_side_drift_breaks_lock) ... ok
+test_marks_side_must_be_valid (test_vocabulary.VocabularyTests.test_marks_side_must_be_valid) ... ok
+test_myth_preset_preserves_given_constraints (test_vocabulary.VocabularyTests.test_myth_preset_preserves_given_constraints) ... ok
+test_natural_and_explicit_ratio_are_exclusive (test_vocabulary.VocabularyTests.test_natural_and_explicit_ratio_are_exclusive) ... ok
+test_natural_short_limbs_not_universally_forbidden (test_vocabulary.VocabularyTests.test_natural_short_limbs_not_universally_forbidden) ... ok
+test_negative_terms_deduplicated (test_vocabulary.VocabularyTests.test_negative_terms_deduplicated) ... ok
+test_original_lexicon_preserved_and_extension_linked (test_vocabulary.VocabularyTests.test_original_lexicon_preserved_and_extension_linked) ... ok
+test_portrait_does_not_demand_feet (test_vocabulary.VocabularyTests.test_portrait_does_not_demand_feet) ... ok
+test_positive_only_excludes_negative_section (test_vocabulary.VocabularyTests.test_positive_only_excludes_negative_section) ... ok
+test_profile_allows_natural_occlusion (test_vocabulary.VocabularyTests.test_profile_allows_natural_occlusion) ... ok
+test_random_generation_reproducible_and_seed_sensitive (test_vocabulary.VocabularyTests.test_random_generation_reproducible_and_seed_sensitive) ... ok
+test_random_invalid_counts (test_vocabulary.VocabularyTests.test_random_invalid_counts) ... ok
+test_random_output_refuses_overwrite (test_vocabulary.VocabularyTests.test_random_output_refuses_overwrite) ... ok
+test_seeded_regression (test_vocabulary.VocabularyTests.test_seeded_regression) ... ok
+test_specific_preset_not_leaked (test_vocabulary.VocabularyTests.test_specific_preset_not_leaked) ... ok
+test_unknown_and_duplicate_term_fail (test_vocabulary.VocabularyTests.test_unknown_and_duplicate_term_fail) ... ok
+test_unspecified_age_not_assumed_adult (test_vocabulary.VocabularyTests.test_unspecified_age_not_assumed_adult) ... ok
+test_wrong_vocabulary_types_fail_cleanly (test_vocabulary.VocabularyTests.test_wrong_vocabulary_types_fail_cleanly) ... ok
+
+----------------------------------------------------------------------
+Ran 85 tests in 3.453s
+
+OK
+
+Exit code: 0
+
+$ /opt/pyvenv/bin/python3 scripts/build_manifest.py --check
+{"status": "PASS", "files": 45, "releaseDigest": "3b64f1cab96163b4f900cdd2d7f74c0ec0ec1fb172bbecdc384ebf6ea1e8e56c"}
+
+Exit code: 0
+
+$ /opt/pyvenv/bin/python3 scripts/check_design.py examples/myth-laborer-188.json
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "pairs": [],
+  "image_review": "UNVERIFIED",
+  "scope": "encoded plan only; authorization, age/era semantics, identity and pixels require separate review"
+}
+
+Exit code: 0
+
+Fresh ZIP extraction and all 45 source SHA256 checks: PASS

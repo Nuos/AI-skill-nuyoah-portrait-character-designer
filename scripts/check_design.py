@@ -35,6 +35,13 @@ def unique_keys(pairs):
     return result
 
 def check(plan):
+    # Keep the schema-v1 API and its original regression cases intact.
+    if isinstance(plan, dict) and type(plan.get("schema_version")) is int and plan["schema_version"] == 2:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("check_turnaround", Path(__file__).with_name("check_turnaround.py"))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module.check(plan)
     errors, pairs = [], []
     def problem(message):
         errors.append(message)

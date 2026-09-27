@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "request": {
+    "text": "西西弗斯，成年男性科林斯国王的四视图定妆照，身高190厘米，明确9头身，不加披风，真人摄影，神话电影造型而非历史复原。",
+    "mode": "text",
+    "explicit_image_request": false
+  },
+  "character": {
+    "id": "CH-SISYPHUS",
+    "asset_version": "v0.1.0",
+    "gender": "男性",
+    "age": {
+      "years": null,
+      "appearance": "中年成年外观，具体年龄未指定",
+      "life_stage": "adult"
+    },
+    "era": {
+      "setting": "古希腊神话题材的科林斯国王，影视化造型",
+      "culture": "王者身份；服装是创作设计，不宣称考古复原",
+      "accuracy": "inspired",
+      "source_urls": []
+    },
+    "identity_anchor": "较长方脸，眉骨适度突出，眼窝中等深度，颧部与下颌轮廓清楚但不锐化，宽厚方圆下巴，浓眉与略长眼裂，平直鼻背，唇形自然，保持同一演员的细微不对称",
+    "body": {
+      "description": "修长而有真实体量，肩背结实、腰腹自然，躯干与四肢配合九头身设定；不单独拉长小腿",
+      "height_cm": 190,
+      "head_body_ratio": 9,
+      "proportion_mode": "explicit"
+    },
+    "appearance": {
+      "skin": "自然暖调肤色，真实毛孔与轻微年龄纹理",
+      "hair": "深褐微卷中短发，整齐短须，发际线及胡须边界保持一致",
+      "makeup": "自然电影定妆，不进行美颜",
+      "costume": "象牙色亚麻长衣，深红窄幅织带，低反光金属腰扣，薄底皮革凉鞋；不加披风，保持前后衣褶和接缝逻辑",
+      "accessories": "简洁低矮金属头环；不含夸张王冠，不持权杖"
+    },
+    "pose": {
+      "posture": "standing",
+      "description": "自然直立，双脚稳定承重，双臂略离躯干，双手放松，不交叉肢体",
+      "support": "无"
+    },
+    "reference": {
+      "mode": "original",
+      "assets": [],
+      "visible_features": [],
+      "unknown_features": []
+    },
+    "notes": "九头身只适用于本例的明确设定，不能作为其他人物默认比例；头环不计入解剖头长。"
+  },
+  "sheet": {
+    "layout": "portrait_front_side_back",
+    "width_px": 3840,
+    "height_px": 2160,
+    "aspect_ratio": "16:9",
+    "portrait_fraction": 0.28,
+    "side": "left",
+    "background": "浅灰无缝摄影棚，地面可见，无装饰边框",
+    "lighting": "柔和均匀的摄影棚光，肤色可读，暗部保留衣料细节",
+    "same_identity": true,
+    "same_costume": true,
+    "same_pose": true,
+    "views": [
+      {
+        "id": "portrait",
+        "framing": "head_to_clavicle",
+        "angle_degrees": 0,
+        "character_id": "CH-SISYPHUS",
+        "asset_version": "v0.1.0",
+        "scale": null,
+        "baseline": null
+      },
+      {
+        "id": "front",
+        "framing": "full_body",
+        "angle_degrees": 0,
+        "character_id": "CH-SISYPHUS",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "side",
+        "framing": "full_body",
+        "angle_degrees": 90,
+        "character_id": "CH-SISYPHUS",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "back",
+        "framing": "full_body",
+        "angle_degrees": 180,
+        "character_id": "CH-SISYPHUS",
+        "asset_version": "v0.1.0",
+        "scale": 1.0,
+        "baseline": 0.93
+      }
+    ]
+  },
+  "locks": {
+    "character.identity_anchor": "较长方脸，眉骨适度突出，眼窝中等深度，颧部与下颌轮廓清楚但不锐化，宽厚方圆下巴，浓眉与略长眼裂，平直鼻背，唇形自然，保持同一演员的细微不对称"
+  },
+  "safety": {
+    "age_appropriate": true,
+    "non_sexual": true
+  }
+}

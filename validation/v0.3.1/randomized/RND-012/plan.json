@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "request": {
+    "text": "随机回归原创样例；未指定；16岁青少年，自然、适龄，无成人化妆；古代启发。四视图，自然比例，无妆，无文字。",
+    "mode": "text",
+    "explicit_image_request": false
+  },
+  "character": {
+    "id": "RND-012",
+    "asset_version": "test-v1",
+    "gender": "未指定",
+    "age": {
+      "years": 16,
+      "appearance": "16岁青少年，自然、适龄，无成人化妆",
+      "life_stage": "adolescent"
+    },
+    "era": {
+      "setting": "古代启发",
+      "culture": "原创虚构人物，不由服装或地域推断族裔",
+      "accuracy": "inspired",
+      "source_urls": []
+    },
+    "identity_anchor": "偏宽椭圆脸，眉骨平缓、眼窝较浅，颧部中等宽度、下颌角圆缓，短圆下巴；细长眼、自然平眉、宽鼻背、下唇略丰满",
+    "body": {
+      "description": "自然中等体型，肩部与骨盆协调，四肢长度与本年龄相符",
+      "height_cm": null,
+      "head_body_ratio": null,
+      "proportion_mode": "natural"
+    },
+    "appearance": {
+      "skin": "自然中等橄榄调肤色，保留适龄纹理，不漂白、不添加伤痕或泥污",
+      "hair": "黑色自然短发，固定发际线与耳侧轮廓",
+      "makeup": "自然无妆，不添加彩妆或美容磨皮",
+      "costume": "朴素交领长衣与同材质长裤，布带系腰，平底布鞋，无现代标志",
+      "accessories": "无首饰，无手持道具，鞋履与服装描述一致"
+    },
+    "pose": {
+      "posture": "standing",
+      "description": "自然中性直立，双脚平行略分，双臂下垂略离躯干，手指自然放松",
+      "support": "无"
+    },
+    "reference": {
+      "mode": "original",
+      "assets": [],
+      "visible_features": [],
+      "unknown_features": []
+    },
+    "expression": "目光平静自然，嘴唇轻合，不夸张表演",
+    "marks": []
+  },
+  "sheet": {
+    "layout": "portrait_front_side_back",
+    "width_px": 2048,
+    "height_px": 1152,
+    "aspect_ratio": "16:9",
+    "portrait_fraction": 0.28,
+    "side": "left",
+    "background": "浅灰无缝摄影棚，地面可见，无装饰边框",
+    "lighting": "柔和均匀的摄影棚光，肤色可读，暗部保留衣料细节",
+    "same_identity": true,
+    "same_costume": true,
+    "same_pose": true,
+    "views": [
+      {
+        "id": "portrait",
+        "framing": "head_to_clavicle",
+        "angle_degrees": 0,
+        "character_id": "RND-012",
+        "asset_version": "test-v1",
+        "scale": null,
+        "baseline": null
+      },
+      {
+        "id": "front",
+        "framing": "full_body",
+        "angle_degrees": 0,
+        "character_id": "RND-012",
+        "asset_version": "test-v1",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "side",
+        "framing": "full_body",
+        "angle_degrees": 90,
+        "character_id": "RND-012",
+        "asset_version": "test-v1",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "back",
+        "framing": "full_body",
+        "angle_degrees": 180,
+        "character_id": "RND-012",
+        "asset_version": "test-v1",
+        "scale": 1.0,
+        "baseline": 0.93
+      }
+    ]
+  },
+  "locks": {
+    "character.identity_anchor": "偏宽椭圆脸，眉骨平缓、眼窝较浅，颧部中等宽度、下颌角圆缓，短圆下巴；细长眼、自然平眉、宽鼻背、下唇略丰满",
+    "character.age": {
+      "years": 16,
+      "appearance": "16岁青少年，自然、适龄，无成人化妆",
+      "life_stage": "adolescent"
+    },
+    "character.gender": "未指定"
+  },
+  "safety": {
+    "age_appropriate": true,
+    "non_sexual": true
+  },
+  "vocabulary": {
+    "include": [],
+    "exclude": []
+  }
+}

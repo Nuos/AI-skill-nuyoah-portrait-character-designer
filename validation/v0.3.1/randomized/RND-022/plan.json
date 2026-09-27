@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "request": {
+    "text": "随机回归原创样例；女性；六个月婴儿，保留婴儿自然外观与安全受托姿态；年代未指定。四视图，自然比例，无妆，无文字。",
+    "mode": "text",
+    "explicit_image_request": false
+  },
+  "character": {
+    "id": "RND-022",
+    "asset_version": "test-v1",
+    "gender": "女性",
+    "age": {
+      "years": 0.5,
+      "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+      "life_stage": "infant"
+    },
+    "era": {
+      "setting": "年代未指定",
+      "culture": "原创虚构人物，不由服装或地域推断族裔",
+      "accuracy": "inspired",
+      "source_urls": []
+    },
+    "identity_anchor": "婴儿自然饱满面颊，低起伏眉骨、浅眼窝、短圆下巴，细软眉毛、圆鼻尖；眼鼻唇比例与婴儿阶段相符，不塑造成成人面部",
+    "body": {
+      "description": "婴儿自然的头躯干和四肢比例，保留圆润软组织，不采用成人骨架",
+      "height_cm": null,
+      "head_body_ratio": null,
+      "proportion_mode": "natural"
+    },
+    "appearance": {
+      "skin": "自然深棕肤色，保留适龄纹理，不漂白、不添加伤痕或泥污",
+      "hair": "稀疏柔软的深色婴儿头发",
+      "makeup": "自然无妆，不添加彩妆或美容磨皮",
+      "costume": "适龄不透明长袖长裤连体衣，松软织物，不束腰、不加硬质配件",
+      "accessories": "无首饰或手持道具，柔软包脚连体衣"
+    },
+    "pose": {
+      "posture": "supported_reclining",
+      "description": "婴儿在稳定承托垫上自然受托，头颈躯干充分支撑，不强行摆正或转动身体",
+      "support": "宽阔稳定的软垫，保留必要支撑与自然遮挡"
+    },
+    "reference": {
+      "mode": "original",
+      "assets": [],
+      "visible_features": [],
+      "unknown_features": [
+        "受托姿态下被支撑遮挡的背部不可确认，背面验收应为PARTIAL"
+      ]
+    },
+    "expression": "目光平静自然，嘴唇轻合，不夸张表演",
+    "marks": []
+  },
+  "sheet": {
+    "layout": "portrait_front_side_back",
+    "width_px": 2048,
+    "height_px": 1152,
+    "aspect_ratio": "16:9",
+    "portrait_fraction": 0.28,
+    "side": "left",
+    "background": "浅灰无缝摄影棚，地面可见，无装饰边框",
+    "lighting": "柔和均匀的摄影棚光，肤色可读，暗部保留衣料细节",
+    "same_identity": true,
+    "same_costume": true,
+    "same_pose": true,
+    "views": [
+      {
+        "id": "portrait",
+        "framing": "head_to_clavicle",
+        "angle_degrees": 0,
+        "character_id": "RND-022",
+        "asset_version": "test-v1",
+        "scale": null,
+        "baseline": null
+      },
+      {
+        "id": "front",
+        "framing": "full_body",
+        "angle_degrees": 0,
+        "character_id": "RND-022",
+        "asset_version": "test-v1",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "side",
+        "framing": "full_body",
+        "angle_degrees": 90,
+        "character_id": "RND-022",
+        "asset_version": "test-v1",
+        "scale": 1.0,
+        "baseline": 0.93
+      },
+      {
+        "id": "back",
+        "framing": "full_body",
+        "angle_degrees": 180,
+        "character_id": "RND-022",
+        "asset_version": "test-v1",
+        "scale": 1.0,
+        "baseline": 0.93
+      }
+    ]
+  },
+  "locks": {
+    "character.identity_anchor": "婴儿自然饱满面颊，低起伏眉骨、浅眼窝、短圆下巴，细软眉毛、圆鼻尖；眼鼻唇比例与婴儿阶段相符，不塑造成成人面部",
+    "character.age": {
+      "years": 0.5,
+      "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+      "life_stage": "infant"
+    },
+    "character.gender": "女性"
+  },
+  "safety": {
+    "age_appropriate": true,
+    "non_sexual": true
+  },
+  "vocabulary": {
+    "include": [],
+    "exclude": []
+  }
+}

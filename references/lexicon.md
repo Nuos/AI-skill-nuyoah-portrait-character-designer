@@ -99,3 +99,62 @@
 分缝与刘海：中分、侧分、碎刘海、齐刘海、无刘海；状态：顺直、松散微卷、蓬松卷发。
 造型服务具体文化或创作方向；历史复原需查对应年份资料。
 发型与服装不计入面部结构差异。
+
+
+## 四视图摄影与全身词表扩展（v0.3.1）
+
+以下由用户提供的真人神话劳作者提示词拆分而来。前述面部与妆容词条完整保留。可执行真源是 [turnaround-lexicon.json](turnaround-lexicon.json)，编译器按视图、姿态和明确比例选择词条，正向句与负向词分开，负向词去重。用户硬约束优先；不能为匹配词条而改人物。
+
+### 通用、条件与角色专用三层
+
+通用层涵盖写实摄影、四列留白、特写局部占比、全身裁切、同尺度基线、自然皮肤、发型与衣缝连续、同一神情、准确侧背方向、柔光与无文字。条件层按站姿／坐姿／受托姿态、自然比例／明确比例路由。角色专用层含劳动肌肉、疲态、尘土汗光、破亚麻、赤足与无披风道具，只在显式选用时添加。
+
+**188厘米、中年男性、暖调偏白、左脸旧伤、九头身、黑色中长发、米灰短袍是该角色的设定，不是通用模板默认值。** 不把男性劳作者的描述渗入女性、儿童、老人、无妆、整洁角色或其它时代。年龄、性别与时代未指定时继续保持未指定。
+
+### 空间与摄影消歧
+
+四视图＝人像特写＋正面全身＋标准侧面全身＋背面全身；不是四个全身方向。28%指整表宽度分配，60%仅指特写局部面部的近似视觉占比。头身比的头长取头部顶部至下巴，不计发量和鞋底；九头身是明确的英雄式造型目标，不证明真实演员具有该人体测量值。无标尺图不能精确验收188厘米。
+
+左／右始终是人物自身的解剖侧别。展示左侧时鼻尖朝画面左，展示右侧时相反。正侧面中远侧手脚可以自然遮挡，不能为“所有手指可见”而扭转身体。特写不强求脚部入画，背面不强求表情可见；必要支撑不能被删掉来满足背面完整。
+
+相机保持水平，全身中长焦观感，特写眼平；二者是独立取景记录，不要求用一个透视中心同时完成。柔光仍允许骨相阴影和接触阴影，不使用“绝对无阴影”。四视图共享灯位、曝光和白平衡，合理转向光影不等于肤色变化。
+
+### 示例、调用和边界
+
+完整优化例：[神话劳作者188厘米](../examples/myth-laborer-188-optimized.md)。结构化例：[myth-laborer-188.json](../examples/myth-laborer-188.json)。[用户原文](../examples/sources/myth-laborer-user-prompt.txt)单独保存用于追溯，不能把原文的个体设定替换成全局规则。
+
+```json
+{"vocabulary":{"include":["laborer.lean_strength","skin.weathered_dust"],"exclude":[]}}
+```
+
+这是完整schema_version=2计划中的可选片段，不是独立计划。include只能选已定义词条；不适用条件会报告错误，默认词条按条件自动跳过。exclude用于有意移除可选表达，不免除核心四视图和身份合同。只需负向词时执行 `python3 scripts/build_prompt.py PLAN.json --negative-only`；没有独立负向字段的宿主用默认合并输出。
+
+### 可执行词条索引
+
+| id | 模块 | 适用范围 | 触发条件 |
+|---|---|---|---|
+| `photo.realism` | 摄影质感 | universal | always |
+| `sheet.separation` | 画面布局 | universal | always |
+| `portrait.crop` | 局部取景 | universal | always |
+| `fullbody.frame` | 全身取景 | universal | always |
+| `sheet.alignment` | 尺度基线 | universal | always |
+| `body.natural` | 身体比例 | universal | natural_ratio |
+| `body.explicit_ratio` | 身体比例 | conditional | explicit_ratio |
+| `skin.microtexture` | 皮肤 | universal | always |
+| `hair.continuity` | 毛发 | universal | always |
+| `costume.continuity` | 服装 | universal | always |
+| `expression.same_moment` | 神情 | universal | always |
+| `standing.neutral` | 姿态 | conditional | standing |
+| `side.orthogonal` | 方向 | universal | always |
+| `back.no_turn` | 方向 | universal | unsupported |
+| `camera.fullbody` | 相机 | universal | always |
+| `light.soft_studio` | 照明 | universal | always |
+| `identity.lock` | 身份 | universal | always |
+| `marks.no_mirror` | 侧别标记 | universal | always |
+| `image.no_annotations` | 画面限制 | universal | always |
+| `laborer.lean_strength` | 劳动体型 | character | adult |
+| `laborer.restrained_fatigue` | 疲态 | character | adult_standing |
+| `skin.weathered_dust` | 风霜皮肤 | character | adult |
+| `costume.worn_linen` | 破旧亚麻 | character | always |
+| `feet.barefoot` | 赤足 | character | standing |
+| `myth.no_equipment` | 神话劳作者限制 | character | adult |

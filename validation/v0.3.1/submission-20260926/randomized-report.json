@@ -1,0 +1,732 @@
+{
+  "schema_version": 1,
+  "seed": 20260925,
+  "sampling": "seeded stratified age coverage; other fields pseudorandom, not population statistics",
+  "plan_count": 24,
+  "prompt_count": 120,
+  "rejected_mutations": 192,
+  "status": "PASS",
+  "scope": "offline structured plans and compiled text; not model inference or image validation",
+  "cases": [
+    {
+      "id": "RND-001",
+      "gender": "女性",
+      "age": {
+        "years": null,
+        "appearance": "年龄未指定，依已定义角色基准，不自动填成年或年轻化",
+        "life_stage": "unspecified"
+      },
+      "era": "神话影视化",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "e1167d4aa3e57fdaf1cf31104051427010f1012af61c5c87dff704b196f0341f",
+        "portrait": "dfe2d6a3d575ffccd70f119f4e106b7f4c5ae426b7ae3545ed80a8b64e925782",
+        "front": "307952aefdeccd1cd986c88c586af2ae598b84ce542966394915d4fde43a20d8",
+        "side": "2d1913cadf75a4dc54d81bb3e25f8605f7ac08446763e313e3418e2915283e2e",
+        "back": "4a5e19d62d32ee2622539a87b4fe142a537b3a8c024aaa95ed628cedea063b82"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-002",
+      "gender": "男性",
+      "age": {
+        "years": 34,
+        "appearance": "34岁成年人，保留自然细纹与皮肤质感",
+        "life_stage": "adult"
+      },
+      "era": "当代",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "3ba517cdbe8717020ead80d3ea17c82a814760be46832fed61cabba0c3b0119b",
+        "portrait": "ad76136b0ab69e2a4d776e10fe7b17cd0147133966ee6babe54f36c26b6ca530",
+        "front": "87870784b854d471f208f343be0882be55dd513a02db22a9ed1636bcafbbe943",
+        "side": "df018224c821629664a2e5d0a104d19fab53e2a993fe6fc0b05cdc0286616591",
+        "back": "7578c8596ef92b36a440833da4f244b764669bfdaf41ce75569c08340d2d3e80"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-003",
+      "gender": "男性",
+      "age": {
+        "years": 78,
+        "appearance": "78岁老人，保留真实年龄纹理，不嫩化、不夸张衰弱",
+        "life_stage": "older_adult"
+      },
+      "era": "神话影视化",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "c9ae185457493ca35e3c66556490ec21afd7b89379971bd8d9ec13ce727e3626",
+        "portrait": "0ec96e7f677691eebe74ceaef1ced68315a0a055bd7e2bb0d22ec87cef8e60c4",
+        "front": "42a1f2c48fa828e89ff1c62d3110e49693a70bb56874e436e05b7dcd88348e3d",
+        "side": "be200efc450cab9565da7b97ba838337ef57263fad96369c48978f520fe6fcb6",
+        "back": "df223c52e97ea5fb88666bcf9ce20fb4ceb080c5300d8d603de0033d80785c81"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-004",
+      "gender": "男性",
+      "age": {
+        "years": 0.5,
+        "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+        "life_stage": "infant"
+      },
+      "era": "近现代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "1499fc39a5c4f24e785bdbca0452f4191611cd01bf61b8d434b760234906889d",
+        "portrait": "bcc4a0ebd32daf26c8a3903fe0c8480d3cc568dca646a03bdabdbd1bc8fb9455",
+        "front": "9914ba0b514983273e70f326e71b54fc8fb53b7ccaf64bb28d6863f7d47a6977",
+        "side": "c2d4b1d1391cbe2fcda0f38088ea96453c72e38b6b7488c987c6171ff7ceaf25",
+        "back": "17fc55a9b828fc555a55f647b7eb6a129000fb83db27fa49ecb11dd1151fb473"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-005",
+      "gender": "男性",
+      "age": {
+        "years": 8,
+        "appearance": "8岁儿童的自然外观，不成人化",
+        "life_stage": "child"
+      },
+      "era": "古代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "32c03c8d2d31af3df16876e6a2d0d15dd285d3039096e2a495ab2f373b6264e3",
+        "portrait": "1f801d43561db2af6ca155c10b203a6b198e0a733df8999a4253d32608e47fe8",
+        "front": "031a68356a20ad60caf2e98a031ea2d3387ba548c77669c380b8cb4ddd213045",
+        "side": "86b82bd071697d386d4e4eba7a9b956902dbcae67cea6bc3c083ecb92312bf6e",
+        "back": "e1e4c26356dfef33941892b581cfddbacbab660d29a72784061ee410566c06e0"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-006",
+      "gender": "女性",
+      "age": {
+        "years": 16,
+        "appearance": "16岁青少年，自然、适龄，无成人化妆",
+        "life_stage": "adolescent"
+      },
+      "era": "架空年代",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "f104d8163ac05720f9faba512480bb5c7320d413c893bfbae2a74520ed27d3db",
+        "portrait": "cc120b437fe97fe888b73de6e1edc6b090507279649183e0dd35b2ce7875a922",
+        "front": "4c285072e12719501472d0f422bcd60539657263c16ff7d5c3c4617cf77d5a8f",
+        "side": "600ff2bfecefd676cbb2eda7e16b55951b2e8900923a4059eb78fe1c768ba152",
+        "back": "6ad9c8f7e96c83ca551e12b4e7e5d5415886577d16eeeda943bcfb2f5cacd7f6"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-007",
+      "gender": "女性",
+      "age": {
+        "years": null,
+        "appearance": "年龄未指定，依已定义角色基准，不自动填成年或年轻化",
+        "life_stage": "unspecified"
+      },
+      "era": "神话影视化",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "782d856f141b6adeb97399ca1fb62c11e860f6d1945e673e3ef013b1b7f436aa",
+        "portrait": "cdf22103351543b8f2d2470c614850c2605294fdb1249169b0a6b85ce3ddc353",
+        "front": "ac069e2d7170b501ede8999d8217379df02180dc30884c22753b5e71e44e5f67",
+        "side": "d7072dc024c91c7f312bed92a157e77a1017d7f14b940dafb877e8bf27eaad5e",
+        "back": "f405da62ad53deab354e98ebb1a1e5f06cfae7e980ea6f8e1a6fde2accd92ba8"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-008",
+      "gender": "男性",
+      "age": {
+        "years": 34,
+        "appearance": "34岁成年人，保留自然细纹与皮肤质感",
+        "life_stage": "adult"
+      },
+      "era": "古代启发",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "be64d47eb710a098858ef98489974a4d90925d4599e05b249c6c6b1c1686f7e1",
+        "portrait": "35908cf31023f60651bfad717c58b9e4fdc7a1defbc3501b43563dbcd4785f00",
+        "front": "59ed2e6e6825f2fc7ebb7797157d3b7cd48c2f6ac746798c17c2b58e13afbb45",
+        "side": "3d93872a3a4445f53775932e945444be5aabed8c256e8b359664d79bec53ddc6",
+        "back": "697c799a53816af6a776aa0428feb68ea897b043ab34f51a990e953e1291c083"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-009",
+      "gender": "男性",
+      "age": {
+        "years": 78,
+        "appearance": "78岁老人，保留真实年龄纹理，不嫩化、不夸张衰弱",
+        "life_stage": "older_adult"
+      },
+      "era": "神话影视化",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "fc37b8e4c7dde5c7e2996fce72602b034a1f378d33123472014f134dc76e492d",
+        "portrait": "5a6334ff467708a21e55f21f3fe3396c70877f2637d5ac273cc31cf449ce868b",
+        "front": "9a3923bbe8cb637d8ff6551ac6948a1e97349a6093a6a8db06087dd8326cde83",
+        "side": "d69085868a5f754c4a371eb98f000000747d5d5062822e1268fc8341ce7a74f7",
+        "back": "046566c96e214fa36afbe18c10b848b224ca203d520916e80c6bdb87ac61f00c"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-010",
+      "gender": "女性",
+      "age": {
+        "years": 0.5,
+        "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+        "life_stage": "infant"
+      },
+      "era": "架空年代",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "15bfb35bbc6a1ad98ebf43cf67655d25c403af5886799d95e5323a8d0d717c92",
+        "portrait": "7526016dfdeaef8fa2f0a600efea359dedab95de47bab0e53802e162dc258640",
+        "front": "ff8a4b49d727ea63fbd5a2227a0fc5f5d348ff1d6053807f55931ec5157c2e49",
+        "side": "bbbe83b9593603de8d1f56bac318eafb5cd6213b9842926fbac7da9c09dc0a2b",
+        "back": "8e728c3a26203c4b904e7ffa1abd26edacdfc1bd7dfd4ddfa685bdc7e0b0604e"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-011",
+      "gender": "未指定",
+      "age": {
+        "years": 8,
+        "appearance": "8岁儿童的自然外观，不成人化",
+        "life_stage": "child"
+      },
+      "era": "当代",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "aad73948bb324a34c50ee6affa5a26ebb643c45adaedffd60fcda23f052253ad",
+        "portrait": "9551fa3d6db17aba416d4685035fb69b3d9f2333378d3244dd165b33a4e1d1a6",
+        "front": "383893c76d91e6686b6cb080ece2ff970790f3e1c99296d347304af7ab4f58b6",
+        "side": "2d1bdfc918d4cd1bb1093f043f7418587885c5d129eb55f4b7f7d2cc57dc258c",
+        "back": "b257b02a5702aa36e3f35eb87f5e9df77fb10f8c0b2a3f5418112507a6c65546"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-012",
+      "gender": "未指定",
+      "age": {
+        "years": 16,
+        "appearance": "16岁青少年，自然、适龄，无成人化妆",
+        "life_stage": "adolescent"
+      },
+      "era": "古代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "90886e8d551d3b6c4489e2fe761aed2b0cbd0b88da8b0a3060249f821ff2d58c",
+        "portrait": "21f3986f1b087e6165fc64e4704392007c516a1efe1a084dd19822807beef441",
+        "front": "cc0177065099277bb3adef0867066f2c945408cf8db52cca28a67a3cd9b7e5ba",
+        "side": "111b994db453968b62f32b59b3d89cdf6f3b33928005d7f8c713737e1a062de6",
+        "back": "ed8bbc11e7f109f03c8f54e24dba0a5557f44031a3db6c8819410115f769af86"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-013",
+      "gender": "男性",
+      "age": {
+        "years": null,
+        "appearance": "年龄未指定，依已定义角色基准，不自动填成年或年轻化",
+        "life_stage": "unspecified"
+      },
+      "era": "神话影视化",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "87491e1b8bea9d345e23e14184115524a24e9033507226b251e91d16dcf466fb",
+        "portrait": "3ef64f2704b5c7babea3a416d024b40268560a26474beda4a0baa53cc1dd8c90",
+        "front": "52808a06fa182d0b2d6128dca75a5af81db4d918c9c65e5b62eee00fe312d16e",
+        "side": "c53d62cdc6408f7876ae987a45f92c3f085823c8d4e2a1bc6c125512a1a9682a",
+        "back": "f7edac9fa27c8053676e088802f7c36f854a2936bbaf47a00d0d5b5e5fc5feb2"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-014",
+      "gender": "非二元",
+      "age": {
+        "years": 34,
+        "appearance": "34岁成年人，保留自然细纹与皮肤质感",
+        "life_stage": "adult"
+      },
+      "era": "当代",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "4eb99b8d4d152cc3f158d4c1bb8f30655f36d008333deda587a38abfde36bfcf",
+        "portrait": "e8598066ba199525700c3832aab339ef67fe0561c19d489e25a6488a85304edb",
+        "front": "04d99f2a9b4916641a8b2bf247dace0a4516e36045d326ee74b49a66f1f63e91",
+        "side": "83e43c373c33c1d683d9e763bd461ccee8fd9ec3460ff9c95d978b4476ae5cb1",
+        "back": "e9d84b54531fe7307e6f604ba9cce0f020271a916296fb3323842b35e3f72e2b"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-015",
+      "gender": "女性",
+      "age": {
+        "years": 78,
+        "appearance": "78岁老人，保留真实年龄纹理，不嫩化、不夸张衰弱",
+        "life_stage": "older_adult"
+      },
+      "era": "古代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "2c21ff70c99294560a472edea202c4d0b8cfbe630be88c303379d7016d6ce229",
+        "portrait": "d29c51f1c81bc29b481afea637ae0dbe4c647dd1481c9711d36590c7d83fb7c5",
+        "front": "454276a7807f868cad6857102666a4fd5f3cef80334a6464c6bb7ea352a53d66",
+        "side": "ca04b429bb10998af9781e2a5b9ee9fab1c3a872b1a266a2df5596fc4054ee65",
+        "back": "d59e23bad870c6f2c04329a0c9f725b8f4bf80f9b4958ffa10d66ef6a8d18425"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-016",
+      "gender": "男性",
+      "age": {
+        "years": 0.5,
+        "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+        "life_stage": "infant"
+      },
+      "era": "近现代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "1499fc39a5c4f24e785bdbca0452f4191611cd01bf61b8d434b760234906889d",
+        "portrait": "bcc4a0ebd32daf26c8a3903fe0c8480d3cc568dca646a03bdabdbd1bc8fb9455",
+        "front": "9914ba0b514983273e70f326e71b54fc8fb53b7ccaf64bb28d6863f7d47a6977",
+        "side": "c2d4b1d1391cbe2fcda0f38088ea96453c72e38b6b7488c987c6171ff7ceaf25",
+        "back": "17fc55a9b828fc555a55f647b7eb6a129000fb83db27fa49ecb11dd1151fb473"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-017",
+      "gender": "男性",
+      "age": {
+        "years": 8,
+        "appearance": "8岁儿童的自然外观，不成人化",
+        "life_stage": "child"
+      },
+      "era": "当代",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "d3a5579e322efdf2a739d553ba31d2b1e7ff5e97a6b67743a15dabea76af1e67",
+        "portrait": "c8cd1475301db471692101531543303136a26a12e21836854d018d1bd4df951b",
+        "front": "da2eb80a92e398b741475315d54937563269fbbea151f97609e009cc607ef676",
+        "side": "dbf5288b309702047e6b2fbda0bfadfc94672f3ab97823b75b645704a0df3974",
+        "back": "43ab0d1ae6b2e707adcadbfa37502156fd9393760c4707cc5eeef1ca6c20f12f"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-018",
+      "gender": "女性",
+      "age": {
+        "years": 16,
+        "appearance": "16岁青少年，自然、适龄，无成人化妆",
+        "life_stage": "adolescent"
+      },
+      "era": "未来架空",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "3bb6f45da9678ec2722eda6ad5d37d485790f320eb27912d8d2f6a271c08805d",
+        "portrait": "d721abf826ccc2adc9c7d3f9c6596336a3b68e9826d2d1861e90c4096b9fac25",
+        "front": "5732e50a75f2644a6723cb2c94fd675eddeef00632c8ffa4f971a5c825559272",
+        "side": "909ca136c2b020e0218887cb5a4e1e1f6e8ee7e1a1512d6a0e4c669378de6ea0",
+        "back": "32005e26503658b58d01eedd5f9528ebb23a1b44d57c50b2ed88706c57076965"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-019",
+      "gender": "男性",
+      "age": {
+        "years": null,
+        "appearance": "年龄未指定，依已定义角色基准，不自动填成年或年轻化",
+        "life_stage": "unspecified"
+      },
+      "era": "年代未指定",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "101adf93a43d8d77cb78b31545cfbf409f4d9672006a9387d5eea8b95cd6c844",
+        "portrait": "e23f0bfb03313ae35392a062cd40342feed50e06efd1aa10c38ffa64fa96e0c8",
+        "front": "481f68fed5160e487e98d7abb95acfb1a5cd94f50a8ca60214ca4461974c8752",
+        "side": "d27e5529979b56f42657f5d73e6dee192a62e55e39b57bb0ad1c41cdc497f9ca",
+        "back": "52f3e4fe77e4dbd540152f593868512a88c74771246398d9b90f07e3b8755676"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-020",
+      "gender": "未指定",
+      "age": {
+        "years": 34,
+        "appearance": "34岁成年人，保留自然细纹与皮肤质感",
+        "life_stage": "adult"
+      },
+      "era": "年代未指定",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "996ba831091855d2df8d48a4cba5196d2551e060b6e0239132bf6af24e5a4a3b",
+        "portrait": "d3b2c3bf1497b4ac563ae370896bc11130f8df7ce16c15c7af47231043c9fc21",
+        "front": "de709d26f4ff8726ea8e9c5df20f3bb4f52f25096ce3ccda0ea39343bed33089",
+        "side": "ca1ee4753bb5391ff0f0286c2d4c52ef50c58b615be503e317d7243fe412f13e",
+        "back": "5b991d9e676f517f4927c82ad1d906c237f2154357542e1e3e0bfe995dfd601d"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-021",
+      "gender": "非二元",
+      "age": {
+        "years": 78,
+        "appearance": "78岁老人，保留真实年龄纹理，不嫩化、不夸张衰弱",
+        "life_stage": "older_adult"
+      },
+      "era": "古代启发",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "274bc521307ba67e13a8a8b2a68fa6c52e7832f547409a7416e161a9d6bdc4cd",
+        "portrait": "3c9ca42e9f510e28ee886afe4fd5e24e0d296bc87dbad0693b784fcded96c815",
+        "front": "3303216a86d8ee263ec23aa1de44dc24d528b4c329cc3e1e3b017ae5b62be6b9",
+        "side": "abb967a3b0d3a380b109f5ec4e1967bd8d9bd2ffe77169108c98d122e60b21db",
+        "back": "142bc6d0c17e7d3d41660d5c1b3ba498fe2d8a174faffbe1f1cdb5129a12c23c"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-022",
+      "gender": "女性",
+      "age": {
+        "years": 0.5,
+        "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+        "life_stage": "infant"
+      },
+      "era": "年代未指定",
+      "side": "left",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "67ba1c3db1855e46b5d6ca1f9f232342e46680bc8dba9f25838bb2868e26ff5e",
+        "portrait": "d5f0872216130b4753ac7a406636d9f520c09b20f65e0c9276a0facaa9697cb8",
+        "front": "107c541be8197268f0d24c9f2a4aae14e22dc0c9928bdbb160d984d5ef416e73",
+        "side": "f319f9da0c3343d4c9a2011f40eeb545e16e4dbb3f681e1553fa4f7a8decfe37",
+        "back": "79235753ca074702f88857f9ba2aeb82bb5b71d31038ff5497bca42e4f7dbadd"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-023",
+      "gender": "男性",
+      "age": {
+        "years": 8,
+        "appearance": "8岁儿童的自然外观，不成人化",
+        "life_stage": "child"
+      },
+      "era": "架空年代",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "7b0bcc2e7757d52a30277747fcd59a8dff9bdff499ce32a9e46b0232dbca3afc",
+        "portrait": "4c9f4abe570bdf467feebf2378d562f240923a98e486cb08f95755b81721ff91",
+        "front": "695526c11298b3af497e540dfc590138cf4bd67fe5fe0095ffc1331b9b09c95c",
+        "side": "b1011f6f1a52840cff74ddc632f7826e414b105a7644ef76a8e95b0e19ac4de5",
+        "back": "d8e1a402b357704addc077a197af8e8a556e5b7929d78dc567546ad12e20ec90"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    },
+    {
+      "id": "RND-024",
+      "gender": "未指定",
+      "age": {
+        "years": 16,
+        "appearance": "16岁青少年，自然、适龄，无成人化妆",
+        "life_stage": "adolescent"
+      },
+      "era": "年代未指定",
+      "side": "right",
+      "plan_status": "PASS",
+      "prompt_sha256": {
+        "sheet": "c36782b2c9eda3b2d390a733fc54eef49f62ae00adbc62fece512e04199378d2",
+        "portrait": "074feecfee161389dac8287462fd1568861a3fc1370f2f36c62aea5189bce31a",
+        "front": "0eedf3cb7008658c9591e1536b33f4a2c6c42a5e45259e2b397909d336729da6",
+        "side": "4a358236d5807d33c625eaf8663555104d668a7b438e7a396d1dd0b4bbf87044",
+        "back": "c54e41b9d30bfdc7f761a8fe0a9c77759953d17a397e9788b9c3efe0c737c6dd"
+      },
+      "rejected_mutations": [
+        "profile_45",
+        "scale_drift",
+        "baseline_drift",
+        "identity_drift",
+        "implicit_nine_heads",
+        "age_lock_drift",
+        "invalid_vocabulary",
+        "image_without_authorization"
+      ],
+      "image_review": "UNVERIFIED"
+    }
+  ]
+}

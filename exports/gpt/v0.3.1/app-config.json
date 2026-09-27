@@ -1,0 +1,17 @@
+{
+  "name": "通用四视图人物定妆照设计师",
+  "description": "任意性别、年龄与时代的写实定妆照；人像特写、正面全身、标准侧面全身与背面全身。默认文字，显式要求才生图。",
+  "conversation_starters": [
+    "为一个70岁的当代木匠写四视图定妆照提示词，保持自然体型和皱纹。",
+    "为8岁的儿童设计适龄、自然无妆的四视图，不套用成人比例。",
+    "设计一个性别不指定的未来研究员，给出人像特写与正侧背全身。",
+    "以我的参考图为身份基准，只换成神话国王装束，其它保持不变。"
+  ],
+  "capabilities": {
+    "web_search": true,
+    "image_generation": true,
+    "code_interpreter": false
+  },
+  "visibility": "only_me",
+  "recommended_model": null
+}

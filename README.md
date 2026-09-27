@@ -1,81 +1,85 @@
-# 南鸢·人像角色设定师
+# 通用四视图人物定妆照设计师
 
-说出你想要的人物气质、五官或妆容，得到一句角色方向和一份完整中文提示词。普通“设计一个角色”先输出文字；明确说“生成图片”后，才调用当前工具的图片能力。
+**v0.3.1 · 任意性别、年龄与时代设定 · 写实摄影 · 身份一致性优先**
 
-## 下载
+在原“南鸢·人像角色设定师”的 Agent Skill 架构上改造。保留面部结构、妆容、参考锁定、检查脚本、回归及 GPT 导出；主任务扩展为完整人物的四视图定妆照。仓库名称与技能调用名不变，避免已有安装失效。
 
-- [下载 v0.2.1 完整 ZIP](https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer/releases/download/v0.2.1/nuyoah-portrait-character-designer-v0.2.1.zip)
-- [查看版本与更新](https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer/releases)
-- [阅读真实案例与完整提示词](examples/real-cases.md)
+## 一、四视图是什么
 
-请下载整个文件夹，保留 `references/` 等配套文件。只复制 `SKILL.md` 会缺少它引用的设计规则。
+从左到右固定为：**正面人像特写 → 正面全身0° → 标准侧面全身90° → 背面全身180°**。特写是头顶至锁骨，其余是完整全身。不是四张不同人物，也不是四个方向的全身图。
 
-## 在 Codex 里安装
+默认展示角色左侧（鼻尖朝画面左），可明确指定右侧。三张全身同一身份、服装、姿态、尺度、头顶高度与基线。默认16:9、特写约28%宽度；4K目标3840×2160，2K长边版2048×1152。目标尺寸不代表已经原生生成，须记录实际像素。
 
-将下面这段话发给有本地文件能力的 Codex：
+## 二、通用能力
 
-```text
-使用 $skill-installer，从 https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer 安装仓库根目录的 Skill，安装名称设为 nuyoah-portrait-character-designer。如果已有同名版本，先告诉我，不要直接覆盖。
-```
+性别使用开放文本，支持不指定；不默认女性或强行中性化。年龄覆盖婴幼儿、儿童、青少年、成人、老人及未定年龄，保持适龄体型；不统一套成人身高、瘦身或九头身。古代、近现代、当代、未来、神话与架空均可设定，区分影视化设计与有来源的历史复原。
 
-安装完成后，在下一轮输入下方示例。若没有被识别，先检查安装结果与文件位置，再重启 Codex。
+参考人物锁定骨相、五官、肤色、身体及稳定标记，只变取景。换装时保留同一人物并以字段级变更合同检查；不同状态分别保存资产版本。需要支撑或坐姿的人物不被强制站立。自然无妆是有效方案。
 
-也可以手动安装：下载并解压 ZIP，把里面的 `nuyoah-portrait-character-designer` 整个文件夹放入个人目录 `~/.agents/skills/`。最终应能找到 `~/.agents/skills/nuyoah-portrait-character-designer/SKILL.md`，不要多套一层文件夹。已有同名版本时先保留自己的修改。位置与发现机制见 [OpenAI 官方说明](https://learn.chatgpt.com/docs/build-skills)。
-
-这是一份独立 Agent Skill，不是已经上架插件目录的插件。其他支持 Agent Skill 的工具请使用各自的安装入口；本版的实用案例来自 Codex，不承诺所有宿主表现一致。
-
-## 第一次使用
+## 三、使用
 
 ```text
-使用 $nuyoah-portrait-character-designer，设计一个明媚妆容的女性角色，中国唐风妆容。
+使用 $nuyoah-portrait-character-designer，为一个70岁的退休木匠设计四视图人物定妆照。当代，自然体型，保留皱纹，浅灰摄影棚背景。只给完整中文提示词。
 ```
-
-正常会得到一句角色方向，以及一个可以单独复制的完整中文 Prompt。你不需要自己填表或先学习骨相术语。
-
-确定方向后，可以继续：
 
 ```text
-按刚才的完整提示词生成一张图片。
+使用 $nuyoah-portrait-character-designer，以我提供的人物图为唯一身份基准，保持五官、年龄、肤色和身体比例，只将服装换成科林斯国王的影视化装束。四视图从左到右为人像特写、正面全身、左侧全身、背面全身。
 ```
 
-生成图片需要当前宿主具备图片能力，额度或费用按所用平台计算。没有图片工具时，也可以把完整提示词复制到自己使用的生图工具中。
+普通设计默认输出文字。明确说“按该提示词生成图片”才调用当前宿主的图片能力；本仓库不是独立生图引擎，不包含模型权重、图片API适配器或 ComfyUI 工作流。没有图片工具时仍可完整编写提示词。
 
-## 继续修改
+## 四、安装与目录
 
-- “我想要设计一个日系昭和感的成年女性角色形象。”
-- “同一套桃粉妆，设计五个不同脸的成年角色。”
-- “保留人物五官和肤色，只把眼线改得柔和一点。”
-- “这张图只拆妆容，别把参考人物的脸带过去。”
-- “只给提示词。”
+把整个项目目录安装为 `nuyoah-portrait-character-designer`，必须保留配套 `references/` 和 `scripts/`。在支持 `$skill-installer` 的宿主中，可指定本仓库地址与根目录；已有同名版本先备份，不能误装回上游v0.2.1。具体发现路径按当前宿主文档确认，见 [来源](references/sources.md)。
 
-局部修改默认返回完整新稿；多个角色分别给出完整提示词。固定脸换妆时保留原有结构；固定妆换脸时保留妆的主色、质地、线条方向和相对落点。
+```text
+SKILL.md                         技能入口，调用名兼容
+agents/                          通用与OpenAI界面适配
+references/                      原面部模块＋四视图、年龄、时代、身份、验收规则
+scripts/check_design.py           统一入口：兼容v1，分发v2
+scripts/check_turnaround.py       四视图计划校验（不检查图片）
+scripts/build_prompt.py           合成图／独立视图完整中文提示词
+scripts/export_gpt.py             从同一规则源导出GPT资料
+scripts/build_manifest.py         清单哈希构建／校验
+examples/                        历史案例＋新四视图结构化示例与说明
+evals/                           原案例＋四视图语义评测材料
+tests/                           原回归＋新增程序回归
+manifest.json                    当前版本文件完整性清单
+CHANGELOG.md                     迁移与变化说明
+```
 
-## 设计方法与边界
+## 五、运行与验证
 
-原创人物会写出眉骨/眼窝、颧部、下颌/下巴之间的具体关系，并将骨架、面颊软组织、妆容与光影分开。柔和骨相同样是有效设计；不把某种气质、国籍或肤色绑定成唯一脸型。详细候选见 [词表](references/lexicon.md)。
-
-本 Skill 重点是人物结构和妆容。完整写真企划、泛用海报反推、视频跨镜头连续性需要其它能力，本 Skill 不要求你安装那些近邻工具。
-
-参考图只描述可见信息，不能从强侧光或遮挡推断未知骨相。不同脸的文字设计、保留人物的指令，都不等于实际生图一定保持身份或每次达到预期审美。
-
-## 版本与验证
-
-v0.2.1 为首次公开发行整理：增加 MIT 许可、下载与安装说明、四份真实生图提示词。角色设计规则延续 v0.2.0，未宣称此次打包提升了图像效果。
-
-已有 11 项程序回归覆盖模式、锁定、结构差异、同妆合同与 GPT 导出。`evals/cases.json` 的 21 项自然语言材料用于人工/模型复核，并非 21 项都经过自动模型执行。运行：
+Python 3.10或更高版本，脚本仅使用标准库，无需图片API密钥。
 
 ```bash
-PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -v
+python3 scripts/check_design.py examples/turnaround-plan.json
+python3 scripts/build_prompt.py examples/turnaround-plan.json
+python3 scripts/build_prompt.py examples/turnaround-plan.json --view side
+python3 scripts/export_gpt.py --out /tmp/portrait-gpt-export
+python3 scripts/build_manifest.py --check
 ```
 
-作者曾进行普通原创、柔和骨相锁定、已知/未知骨相下的改唇色、五角色同妆文字测试。早期详细人物要求曾误触发生图，补充模式边界后相同原请求复测返回文字；局部编辑的极简代码块格式也出现过偏差。
+普通用户不必填写JSON；它是复杂任务与工程接入的可选内部合同。完整规范见 [四视图合同](references/four-view-contract.md)、[身份年龄时代](references/identity-and-era.md)、[示例](examples/four-view-cases.md)。原schema_version=1检查继续可用，但不能证明新四视图合格。
 
-2026-09-11 的真实图像例子包括唐风、窗边人像与两版校园人像：有可用方向，也有被作者否定的脸型和笑容。唐风图发髻顶缘有裁切；窗边图部分反光偏强；校园调整版仍额外生成了肩包。图像效果请看具体案例，不将程序通过写成所有图片稳定。
+最新验证结果见 [v0.3.1审计记录](references/audit-v0.3.1.md)，旧版记录保留。**程序PASS不等于图片PASS**：无真实图片时图像验收保持UNVERIFIED；新增自然语言评测材料不冒称已做模型执行。原 [真实案例](examples/real-cases.md) 仅为v0.2.1历史记录。
 
-`scripts/check_design.py` 检查内部结构记录，不判断图片；`scripts/export_gpt.py` 从同一规则导出 GPT 资料，不登录、不上传、不自动公开 GPT。适配说明见 [应用适配](references/acceptance-and-gpt.md)。
+## 六、许可
 
-## 许可与来源
+遵循 [MIT License](LICENSE)，保留原作者南鸢及其版权声明；本次由 Nuos 维护的派生版单独记录来源。仓库地址不变，不替原作者发布上游版本，也不自动发布GPT或上传参考人物资料。
 
-Skill 的代码和文档使用 [MIT License](LICENSE)，保留版权及许可声明即可按许可使用。来源和未验证事项见 [sources.md](references/sources.md)。第三方参考图片不包含在发行包中。
 
-本公开仓库是发行版本；作者从自己的统一维护源生成更新，避免多份规则各自变化。
+## 七、v0.3.1：可执行词表与随机测试
+
+新增25条摄影、全身、神情、材质和一致性词条，[文字词表](references/lexicon.md)与[机器词表](references/turnaround-lexicon.json)相互对应。词条分通用／条件／角色专用，编译器实际消费它们，按视图生成并去重负向词。
+
+用户提供的188厘米中年神话劳作者已保存为[完整优化例](examples/myth-laborer-188-optimized.md)和[可运行计划](examples/myth-laborer-188.json)。这是一个个体预设，不会把儿童、女性、老人或未指定年龄的人物改成九头身男演员。
+
+```bash
+python3 scripts/build_prompt.py examples/myth-laborer-188.json
+python3 scripts/build_prompt.py examples/myth-laborer-188.json --view portrait --negative-only
+python3 scripts/randomized_smoke.py --seed 20260925 --count 24 --out /tmp/nuyoah-random-new
+```
+
+本地85项测试通过，24组随机人物生成120份提示词、192个故障变体全部被拦截。详见[随机记录](evals/randomized-v0.3.1.json)与[测试日志](tests/run-v0.3.1.txt)。这是离线程序测试，不是120张图片。真实生图试测因fal账户余额不足返回403，未生成图片，见[图像试测记录](evals/image-test-v0.3.1.json)。远端提交尝试被平台安全检查拦截，本包保留完整文件；不把未提交状态标成GitHub已更新。
