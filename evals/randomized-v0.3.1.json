@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "seed": 20260925,
+  "sampling": "seeded stratified age coverage; other fields pseudorandom, not population statistics",
+  "plan_count": 24,
+  "prompt_count": 120,
+  "rejected_mutations": 192,
+  "status": "PASS",
+  "scope": "offline structured plans and compiled text; not model inference or image validation",
+  "cases": [
+    {
+      "id": "RND-001",
+      "gender": "女性",
+      "age": {
+        "years": null,
+        "appearance": "年龄未指定，依已定义角色基准，不自动填成年或年轻化",
+        "life_stage": "unspecified"
+      },
+      "era": "神话影视化",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "e1167d4aa3e57fdaf1cf31104051427010f1012af61c5c87dff704b196f0341f"
+    },
+    {
+      "id": "RND-002",
+      "gender": "男性",
+      "age": {
+        "years": 34,
+        "appearance": "34岁成年人，保留自然细纹与皮肤质感",
+        "life_stage": "adult"
+      },
+      "era": "当代",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "3ba517cdbe8717020ead80d3ea17c82a814760be46832fed61cabba0c3b0119b"
+    },
+    {
+      "id": "RND-003",
+      "gender": "男性",
+      "age": {
+        "years": 78,
+        "appearance": "78岁老人，保留真实年龄纹理，不嫩化、不夸张衰弱",
+        "life_stage": "older_adult"
+      },
+      "era": "神话影视化",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "c9ae185457493ca35e3c66556490ec21afd7b89379971bd8d9ec13ce727e3626"
+    },
+    {
+      "id": "RND-004",
+      "gender": "男性",
+      "age": {
+        "years": 0.5,
+        "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+        "life_stage": "infant"
+      },
+      "era": "近现代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "1499fc39a5c4f24e785bdbca0452f4191611cd01bf61b8d434b760234906889d"
+    },
+    {
+      "id": "RND-005",
+      "gender": "男性",
+      "age": {
+        "years": 8,
+        "appearance": "8岁儿童的自然外观，不成人化",
+        "life_stage": "child"
+      },
+      "era": "古代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "32c03c8d2d31af3df16876e6a2d0d15dd285d3039096e2a495ab2f373b6264e3"
+    },
+    {
+      "id": "RND-006",
+      "gender": "女性",
+      "age": {
+        "years": 16,
+        "appearance": "16岁青少年，自然、适龄，无成人化妆",
+        "life_stage": "adolescent"
+      },
+      "era": "架空年代",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "f104d8163ac05720f9faba512480bb5c7320d413c893bfbae2a74520ed27d3db"
+    },
+    {
+      "id": "RND-007",
+      "gender": "女性",
+      "age": {
+        "years": null,
+        "appearance": "年龄未指定，依已定义角色基准，不自动填成年或年轻化",
+        "life_stage": "unspecified"
+      },
+      "era": "神话影视化",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "782d856f141b6adeb97399ca1fb62c11e860f6d1945e673e3ef013b1b7f436aa"
+    },
+    {
+      "id": "RND-008",
+      "gender": "男性",
+      "age": {
+        "years": 34,
+        "appearance": "34岁成年人，保留自然细纹与皮肤质感",
+        "life_stage": "adult"
+      },
+      "era": "古代启发",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "be64d47eb710a098858ef98489974a4d90925d4599e05b249c6c6b1c1686f7e1"
+    },
+    {
+      "id": "RND-009",
+      "gender": "男性",
+      "age": {
+        "years": 78,
+        "appearance": "78岁老人，保留真实年龄纹理，不嫩化、不夸张衰弱",
+        "life_stage": "older_adult"
+      },
+      "era": "神话影视化",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "fc37b8e4c7dde5c7e2996fce72602b034a1f378d33123472014f134dc76e492d"
+    },
+    {
+      "id": "RND-010",
+      "gender": "女性",
+      "age": {
+        "years": 0.5,
+        "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+        "life_stage": "infant"
+      },
+      "era": "架空年代",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "15bfb35bbc6a1ad98ebf43cf67655d25c403af5886799d95e5323a8d0d717c92"
+    },
+    {
+      "id": "RND-011",
+      "gender": "未指定",
+      "age": {
+        "years": 8,
+        "appearance": "8岁儿童的自然外观，不成人化",
+        "life_stage": "child"
+      },
+      "era": "当代",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "aad73948bb324a34c50ee6affa5a26ebb643c45adaedffd60fcda23f052253ad"
+    },
+    {
+      "id": "RND-012",
+      "gender": "未指定",
+      "age": {
+        "years": 16,
+        "appearance": "16岁青少年，自然、适龄，无成人化妆",
+        "life_stage": "adolescent"
+      },
+      "era": "古代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "90886e8d551d3b6c4489e2fe761aed2b0cbd0b88da8b0a3060249f821ff2d58c"
+    },
+    {
+      "id": "RND-013",
+      "gender": "男性",
+      "age": {
+        "years": null,
+        "appearance": "年龄未指定，依已定义角色基准，不自动填成年或年轻化",
+        "life_stage": "unspecified"
+      },
+      "era": "神话影视化",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "87491e1b8bea9d345e23e14184115524a24e9033507226b251e91d16dcf466fb"
+    },
+    {
+      "id": "RND-014",
+      "gender": "非二元",
+      "age": {
+        "years": 34,
+        "appearance": "34岁成年人，保留自然细纹与皮肤质感",
+        "life_stage": "adult"
+      },
+      "era": "当代",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "4eb99b8d4d152cc3f158d4c1bb8f30655f36d008333deda587a38abfde36bfcf"
+    },
+    {
+      "id": "RND-015",
+      "gender": "女性",
+      "age": {
+        "years": 78,
+        "appearance": "78岁老人，保留真实年龄纹理，不嫩化、不夸张衰弱",
+        "life_stage": "older_adult"
+      },
+      "era": "古代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "2c21ff70c99294560a472edea202c4d0b8cfbe630be88c303379d7016d6ce229"
+    },
+    {
+      "id": "RND-016",
+      "gender": "男性",
+      "age": {
+        "years": 0.5,
+        "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+        "life_stage": "infant"
+      },
+      "era": "近现代启发",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "1499fc39a5c4f24e785bdbca0452f4191611cd01bf61b8d434b760234906889d"
+    },
+    {
+      "id": "RND-017",
+      "gender": "男性",
+      "age": {
+        "years": 8,
+        "appearance": "8岁儿童的自然外观，不成人化",
+        "life_stage": "child"
+      },
+      "era": "当代",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "d3a5579e322efdf2a739d553ba31d2b1e7ff5e97a6b67743a15dabea76af1e67"
+    },
+    {
+      "id": "RND-018",
+      "gender": "女性",
+      "age": {
+        "years": 16,
+        "appearance": "16岁青少年，自然、适龄，无成人化妆",
+        "life_stage": "adolescent"
+      },
+      "era": "未来架空",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "3bb6f45da9678ec2722eda6ad5d37d485790f320eb27912d8d2f6a271c08805d"
+    },
+    {
+      "id": "RND-019",
+      "gender": "男性",
+      "age": {
+        "years": null,
+        "appearance": "年龄未指定，依已定义角色基准，不自动填成年或年轻化",
+        "life_stage": "unspecified"
+      },
+      "era": "年代未指定",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "101adf93a43d8d77cb78b31545cfbf409f4d9672006a9387d5eea8b95cd6c844"
+    },
+    {
+      "id": "RND-020",
+      "gender": "未指定",
+      "age": {
+        "years": 34,
+        "appearance": "34岁成年人，保留自然细纹与皮肤质感",
+        "life_stage": "adult"
+      },
+      "era": "年代未指定",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "996ba831091855d2df8d48a4cba5196d2551e060b6e0239132bf6af24e5a4a3b"
+    },
+    {
+      "id": "RND-021",
+      "gender": "非二元",
+      "age": {
+        "years": 78,
+        "appearance": "78岁老人，保留真实年龄纹理，不嫩化、不夸张衰弱",
+        "life_stage": "older_adult"
+      },
+      "era": "古代启发",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "274bc521307ba67e13a8a8b2a68fa6c52e7832f547409a7416e161a9d6bdc4cd"
+    },
+    {
+      "id": "RND-022",
+      "gender": "女性",
+      "age": {
+        "years": 0.5,
+        "appearance": "六个月婴儿，保留婴儿自然外观与安全受托姿态",
+        "life_stage": "infant"
+      },
+      "era": "年代未指定",
+      "side": "left",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "67ba1c3db1855e46b5d6ca1f9f232342e46680bc8dba9f25838bb2868e26ff5e"
+    },
+    {
+      "id": "RND-023",
+      "gender": "男性",
+      "age": {
+        "years": 8,
+        "appearance": "8岁儿童的自然外观，不成人化",
+        "life_stage": "child"
+      },
+      "era": "架空年代",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "7b0bcc2e7757d52a30277747fcd59a8dff9bdff499ce32a9e46b0232dbca3afc"
+    },
+    {
+      "id": "RND-024",
+      "gender": "未指定",
+      "age": {
+        "years": 16,
+        "appearance": "16岁青少年，自然、适龄，无成人化妆",
+        "life_stage": "adolescent"
+      },
+      "era": "年代未指定",
+      "side": "right",
+      "plan_status": "PASS",
+      "image_review": "UNVERIFIED",
+      "sheet_sha256": "c36782b2c9eda3b2d390a733fc54eef49f62ae00adbc62fece512e04199378d2"
+    }
+  ]
+}

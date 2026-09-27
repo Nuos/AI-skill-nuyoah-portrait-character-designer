@@ -1,0 +1,578 @@
+[
+  {
+    "path": "RND-001/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-001/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-001/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-001/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-001/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-001/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-002/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-002/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-002/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-002/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-002/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-002/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-003/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-003/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-003/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-003/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-003/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-003/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-004/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-004/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-004/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-004/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-004/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-004/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-005/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-005/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-005/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-005/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-005/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-005/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-006/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-006/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-006/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-006/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-006/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-006/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-007/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-007/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-007/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-007/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-007/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-007/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-008/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-008/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-008/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-008/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-008/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-008/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-009/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-009/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-009/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-009/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-009/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-009/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-010/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-010/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-010/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-010/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-010/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-010/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-011/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-011/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-011/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-011/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-011/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-011/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-012/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-012/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-012/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-012/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-012/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-012/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-013/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-013/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-013/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-013/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-013/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-013/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-014/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-014/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-014/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-014/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-014/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-014/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-015/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-015/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-015/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-015/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-015/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-015/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-016/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-016/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-016/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-016/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-016/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-016/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-017/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-017/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-017/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-017/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-017/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-017/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-018/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-018/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-018/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-018/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-018/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-018/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-019/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-019/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-019/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-019/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-019/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-019/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-020/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-020/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-020/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-020/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-020/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-020/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-021/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-021/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-021/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-021/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-021/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-021/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-022/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-022/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-022/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-022/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-022/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-022/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-023/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-023/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-023/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-023/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-023/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-023/side.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-024/back.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-024/front.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-024/plan.json",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-024/portrait.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-024/sheet.txt",
+    "same_bytes": true
+  },
+  {
+    "path": "RND-024/side.txt",
+    "same_bytes": true
+  }
+]

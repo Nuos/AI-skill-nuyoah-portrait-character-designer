@@ -1,19 +1,26 @@
 {
   "schemaVersion": 1,
   "name": "nuyoah-portrait-character-designer",
-  "displayName": "南鸢人像角色设定师",
-  "version": "0.2.1",
+  "displayName": "通用四视图人物定妆照设计师",
+  "version": "0.3.1",
   "license": "MIT",
-  "source": "https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer",
-  "sourceCommit": "386660a4399ed492c691659f74b57734d18f52b7",
-  "releaseDigest": "d14ef28e45c4b78c2e4e95aeb3412754a6d6fb7f4e60b5bc4a89b82d3a640218",
-  "publishedAt": "2026-09-11T02:11:58Z",
-  "homepage": "https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer",
+  "source": "https://github.com/Nuos/AI-skill-nuyoah-portrait-character-designer",
+  "homepage": "https://github.com/Nuos/AI-skill-nuyoah-portrait-character-designer",
+  "upstream": "https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer",
+  "baseCommit": "99b9a2c90e5b09507c6a61b5c27b9e2740ddb63d",
+  "versionDate": "2026-09-25",
+  "releaseDigest": "3b64f1cab96163b4f900cdd2d7f74c0ec0ec1fb172bbecdc384ebf6ea1e8e56c",
+  "digestScope": "SHA256 of canonical UTF-8 JSON files array; excludes manifest.json to avoid self-reference",
   "files": [
     {
       "path": ".gitignore",
       "bytes": 10,
       "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2209,
+      "sha256": "8cf587a149c0c0f7ddbaa07fe089b660e6d68040a995f96377ca6570cf155e5a"
     },
     {
       "path": "LICENSE",
@@ -22,23 +29,23 @@
     },
     {
       "path": "README.md",
-      "bytes": 5371,
-      "sha256": "080201f923e0ab892583cb27fcd3885f688776ebdcb20f7139f02cbb1e7e7f72"
+      "bytes": 6463,
+      "sha256": "7891a8e0720464c229316d6964c8dd1ea88e42ac40d8e41d6f71b203e06c1da3"
     },
     {
       "path": "SKILL.md",
-      "bytes": 2705,
-      "sha256": "3985c6226a19464d15fd3f17f707753c1df8a791a38e8b66c6fe9d7141099860"
+      "bytes": 3753,
+      "sha256": "b854c300951d795ca8f293dcddc0371374d4401001b772caef62cf5c545171d7"
     },
     {
       "path": "agents/interface.yaml",
-      "bytes": 702,
-      "sha256": "ecbb5539938fe40bc6b9d908d3676316b6985e698581ad6b0798a17196fa36fe"
+      "bytes": 852,
+      "sha256": "5e69564235d37736878662e63523ab97010732120146f17bff8f47dbfe9596ab"
     },
     {
       "path": "agents/openai.yaml",
-      "bytes": 348,
-      "sha256": "c9abe95fa6d71a90dd078d97fce75bd403c501b6eb71aa5d46af9b3f6af421c7"
+      "bytes": 498,
+      "sha256": "dc444e025cde0532d2e0e859f33a421915b6e74e07c13059321582d7970f1535"
     },
     {
       "path": "evals/cases.json",
@@ -46,14 +53,89 @@
       "sha256": "bcd50bfdf075c898ecf8acd36603eaf1b4f48c786e13599b5c40feb2b3c613d7"
     },
     {
+      "path": "evals/image-test-v0.3.1.json",
+      "bytes": 1086,
+      "sha256": "f002446c5d4d260b1027aa302b70c81923cae04f9bd3aa02b33b2c43c167d5f6"
+    },
+    {
+      "path": "evals/randomized-v0.3.1.json",
+      "bytes": 10688,
+      "sha256": "988ec63584934ac5799b0733e091b77f69184db3a6dfb48c1670056488f92446"
+    },
+    {
+      "path": "evals/turnaround-cases.json",
+      "bytes": 6961,
+      "sha256": "b41f9f0eee25f63809994dd9266050766e53141490029ef1d329741194d2ce3d"
+    },
+    {
+      "path": "examples/four-view-cases.md",
+      "bytes": 2663,
+      "sha256": "fc921f35d6b65f60039990216d3be063ddd98d2b0fefb6e7997d7d7928c1395f"
+    },
+    {
+      "path": "examples/myth-laborer-188-optimized.md",
+      "bytes": 11307,
+      "sha256": "6f3fd115f12f7203a96a7c8f7027fea8c37a86395a2e52bdae3c909aa019c4dc"
+    },
+    {
+      "path": "examples/myth-laborer-188.json",
+      "bytes": 14289,
+      "sha256": "f09f4399d7daebe447792d2257a3d744931754bf11a0a0edf525a0bdf83d41ec"
+    },
+    {
       "path": "examples/real-cases.md",
       "bytes": 10089,
       "sha256": "78d6ed38b20a47d1131b3bb20c16ff777e7c7da749e2237dfefebf0566fee863"
     },
     {
+      "path": "examples/sources/myth-laborer-user-prompt.txt",
+      "bytes": 7409,
+      "sha256": "48afe6429c71268199eaa4cd7086796e3282f745a7f0a9b075d4e737ab96be30"
+    },
+    {
+      "path": "examples/turnaround-child.json",
+      "bytes": 3422,
+      "sha256": "a848fff352e70b4795d449e851e9339e570570cbe4c60562baecf5cf6da96476"
+    },
+    {
+      "path": "examples/turnaround-elder.json",
+      "bytes": 3586,
+      "sha256": "8a28e34e2e6345758641bf106b3b97eb563aa5326d46d7450d74335cf5ab039a"
+    },
+    {
+      "path": "examples/turnaround-future.json",
+      "bytes": 3538,
+      "sha256": "d1bbe9bb96256087ff838eb77514e937d3190ac0642b74b9301b65e8db208b7a"
+    },
+    {
+      "path": "examples/turnaround-infant.json",
+      "bytes": 3883,
+      "sha256": "f37d68dd289415408f9e918462911f69ed1775521c6e953f8720fe2b22fcb8b5"
+    },
+    {
+      "path": "examples/turnaround-myth.json",
+      "bytes": 3858,
+      "sha256": "94f0a46e37e12ecb10975bf8d0a672b89dd5a8e48b0f5ab12ae63f7e3f276660"
+    },
+    {
+      "path": "examples/turnaround-plan.json",
+      "bytes": 3642,
+      "sha256": "56b6d20d73b8e491d05ca4e3a8f6395c8e0341d64ee4a1eacf9bd2144f9c5bba"
+    },
+    {
       "path": "references/acceptance-and-gpt.md",
-      "bytes": 2768,
-      "sha256": "242324e8df12415e9b35337648456dbdb3ff05b6edbbc716e791cb8ded3cc40c"
+      "bytes": 2721,
+      "sha256": "8460fe2383f52f4274c7f8fd92ad00f281730d28493c229a0ccf33fb0609a428"
+    },
+    {
+      "path": "references/audit-v0.3.0.md",
+      "bytes": 3484,
+      "sha256": "698902abd22280b37a0912b1816bba813b4f80ff1f8ccffbd3b48c2b10601bb8"
+    },
+    {
+      "path": "references/audit-v0.3.1.md",
+      "bytes": 3289,
+      "sha256": "c10cf8bd22960b602bb09ab42d9df4bb636bee66e764bb831b9f7872f28070a7"
     },
     {
       "path": "references/check-contract.md",
@@ -62,13 +144,23 @@
     },
     {
       "path": "references/decision-rules.md",
-      "bytes": 6094,
-      "sha256": "dae1369e547ff0c9b44bf96eb853b8e168b3f75c9abf1c4b50f7931965beca33"
+      "bytes": 3104,
+      "sha256": "09af7551cdff3b9b2276e06cb39eaef74c66817e5a2c099aaa50f8902d299a39"
+    },
+    {
+      "path": "references/four-view-contract.md",
+      "bytes": 6229,
+      "sha256": "835219760b8ea7567b3950a2f3876ecb0a6c3bf62d4c83f3135143cd500c4bf3"
+    },
+    {
+      "path": "references/identity-and-era.md",
+      "bytes": 3363,
+      "sha256": "a8cdb05b7da0349faac044021e56b8c21091a616555c110aec4b26a84e6de61c"
     },
     {
       "path": "references/lexicon.md",
-      "bytes": 6853,
-      "sha256": "7714260ac2c5b3af635c82a1becd9afd2b3a2812f73432281e044e6b5c9c7a7e"
+      "bytes": 11459,
+      "sha256": "832695f1b3961a28cde016dcdf75173042c0ffcfa8a24514f7b710df2f73cf81"
     },
     {
       "path": "references/makeup-adaptation.md",
@@ -76,9 +168,14 @@
       "sha256": "8bc45d1733fa0f2eca2ddbcc4c80af9948187478964185a14ff685b2a10ad151"
     },
     {
+      "path": "references/prompt-template.md",
+      "bytes": 3407,
+      "sha256": "ef61cb8cde7a85d7ae0402d54952384dbddcd0cca1a4d8bd44f2e610326142af"
+    },
+    {
       "path": "references/sources.md",
-      "bytes": 1651,
-      "sha256": "be646857668f1350bb63be9f3cdd4b3e8bef5d9412fcbe8da71d15821739fe75"
+      "bytes": 1867,
+      "sha256": "297330c4d6235db7aa3a2a23da250832a60e90b226e9b171449d72e417fa0291"
     },
     {
       "path": "references/structure-and-compatibility.md",
@@ -86,20 +183,60 @@
       "sha256": "f9a7f4782d8d6ef308876868635cae8d0faa22459f08fa0efd9a290cca83c682"
     },
     {
+      "path": "references/turnaround-lexicon.json",
+      "bytes": 14191,
+      "sha256": "4ad7a25e2d6312d333df22c45840864c9b36dffe688f219dfec62bb54608f254"
+    },
+    {
+      "path": "scripts/build_manifest.py",
+      "bytes": 3321,
+      "sha256": "b80c7a88714dacc0ece0f1e40baf9865ea4edfa612dc140b17133f19ba373b59"
+    },
+    {
+      "path": "scripts/build_prompt.py",
+      "bytes": 7717,
+      "sha256": "bf64f8920cefe6bacfeba0f257d648b3a7ddbc0283b2c40993f3cb1f420da359"
+    },
+    {
       "path": "scripts/check_design.py",
-      "bytes": 6712,
-      "sha256": "59a2fadabc949e80b51a6753f300b70cc8597c523afe2211d83645d3ef8d68ff"
+      "bytes": 7172,
+      "sha256": "4e9b5e419b03d2e8cbd926cfb062a9fef5101badf8ca83d45d5ab8a3391cfe13"
+    },
+    {
+      "path": "scripts/check_turnaround.py",
+      "bytes": 21048,
+      "sha256": "aa9399c88c5f500085f8c62f49fd4284c5de8222300bb536374dde250f0d11ce"
     },
     {
       "path": "scripts/export_gpt.py",
-      "bytes": 3062,
-      "sha256": "84bfe410537759548c520566b678f74ad94ebd25d78c052c77ffd78bf4cc9b42"
+      "bytes": 3786,
+      "sha256": "cee7a3f20cc051ccadda9fb6189dbb5a7e2bb7ea73419171f4f7d612ea94cff6"
+    },
+    {
+      "path": "scripts/randomized_smoke.py",
+      "bytes": 10234,
+      "sha256": "cec2ba147a5453f270181cc1ebd4060475555c4ad730f63be6934162bcb9decb"
+    },
+    {
+      "path": "tests/run-v0.3.1.txt",
+      "bytes": 10004,
+      "sha256": "9ad6e0834caa910b6672787f26a25111b12a97392d4548b36421a1026ad60ea1"
     },
     {
       "path": "tests/test_design.py",
       "bytes": 5647,
       "sha256": "d9fbf92184bbd8ee34c0538a467e2cc2e45651ff805e71ba01726624e11be08c"
+    },
+    {
+      "path": "tests/test_turnaround.py",
+      "bytes": 16524,
+      "sha256": "f0617031197b0cd8e1720ce7e8b4e4c876e4bed0c73ed966dd50307380ef7982"
+    },
+    {
+      "path": "tests/test_vocabulary.py",
+      "bytes": 8335,
+      "sha256": "6b17120952e51c015b921d8e9d1ae6c85c87d439fb26a000644ac2c66e5d6f08"
     }
   ],
-  "installInstructions": "https://github.com/nuyoah-ai-works/nuyoah-portrait-character-designer/blob/main/README.md"
+  "installInstructions": "https://github.com/Nuos/AI-skill-nuyoah-portrait-character-designer/blob/main/README.md"
 }

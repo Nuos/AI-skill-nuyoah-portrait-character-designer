@@ -1,0 +1,25 @@
+{
+  "skill_version": "0.3.1",
+  "source_sha256": {
+    "SKILL.md": "b854c300951d795ca8f293dcddc0371374d4401001b772caef62cf5c545171d7",
+    "references/decision-rules.md": "09af7551cdff3b9b2276e06cb39eaef74c66817e5a2c099aaa50f8902d299a39",
+    "references/four-view-contract.md": "835219760b8ea7567b3950a2f3876ecb0a6c3bf62d4c83f3135143cd500c4bf3",
+    "references/identity-and-era.md": "a8cdb05b7da0349faac044021e56b8c21091a616555c110aec4b26a84e6de61c",
+    "references/structure-and-compatibility.md": "f9a7f4782d8d6ef308876868635cae8d0faa22459f08fa0efd9a290cca83c682",
+    "references/lexicon.md": "832695f1b3961a28cde016dcdf75173042c0ffcfa8a24514f7b710df2f73cf81",
+    "references/turnaround-lexicon.json": "4ad7a25e2d6312d333df22c45840864c9b36dffe688f219dfec62bb54608f254",
+    "references/makeup-adaptation.md": "8bc45d1733fa0f2eca2ddbcc4c80af9948187478964185a14ff685b2a10ad151",
+    "references/check-contract.md": "d8e53469b802f0ca73f87defa0b0470aed0c0736da9517d1770fe15af98c26c9",
+    "references/prompt-template.md": "ef61cb8cde7a85d7ae0402d54952384dbddcd0cca1a4d8bd44f2e610326142af",
+    "references/acceptance-and-gpt.md": "8460fe2383f52f4274c7f8fd92ad00f281730d28493c229a0ccf33fb0609a428",
+    "references/sources.md": "297330c4d6235db7aa3a2a23da250832a60e90b226e9b171449d72e417fa0291"
+  },
+  "output_sha256": {
+    "instructions.txt": "af399c7179072d09a4a666f733f2b8fc039851f6525dd631829d636a658f93bd",
+    "knowledge-lexicon.md": "f0d99f5edd584906d47f8ee1d138e9f841781c6df8637159252295486ec27b9e",
+    "app-config.json": "02ba5aced28e64ed2bfdd55324fbc4877015bfccc8ac713520ae01ca29223684"
+  },
+  "instructions_characters": 7496,
+  "image_generation": "optional and enabled; current explicit user request required",
+  "scope": "export only; live app save, model behavior and images remain separately unverified"
+}
